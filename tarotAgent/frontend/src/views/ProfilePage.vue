@@ -39,12 +39,10 @@
 import { ref, onMounted } from 'vue'
 import { useRouter } from 'vue-router'
 import { useUserStore } from '../stores/user'
-import { useReadingStore } from '../stores/reading'
 import { getHistory } from '../api/reading'
 
 const router = useRouter()
 const userStore = useUserStore()
-const readingStore = useReadingStore()
 
 const readings = ref([])
 const loading = ref(true)
@@ -68,15 +66,10 @@ function statusLabel(s) {
 }
 
 function goToReading(r) {
-  if (r.status === 'completed') {
-    router.push(`/detail/${r.id}`)
-  } else if (r.status === 'paid') {
+  if (r.status === 'completed' || r.status === 'paid') {
     router.push(`/detail/${r.id}`)
   } else {
-    readingStore.currentReadingId = r.id
-    readingStore.cardsDrawn = r.cards_drawn || []
-    readingStore.briefReading = r.brief_reading || ''
-    router.push(`/cards`)
+    router.push(`/result/${r.id}`)
   }
 }
 

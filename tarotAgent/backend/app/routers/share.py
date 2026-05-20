@@ -1,5 +1,5 @@
 from fastapi import APIRouter, Depends, HTTPException
-from fastapi.responses import FileResponse
+from fastapi.responses import Response
 from sqlalchemy import select
 from sqlalchemy.ext.asyncio import AsyncSession
 
@@ -53,8 +53,7 @@ async def get_image(
     user: User = Depends(get_current_user),
     db: AsyncSession = Depends(get_db),
 ):
-    import os
-    from app.config import settings
+    import httpx
 
     result = await db.execute(select(Reading).where(Reading.id == reading_id))
     reading = result.scalar_one_or_none()
@@ -62,8 +61,14 @@ async def get_image(
     if not reading or reading.user_id != user.id or not reading.share_image_url:
         raise HTTPException(status_code=404, detail="Image not found")
 
-    file_path = os.path.join(settings.STATIC_DIR, "generated", f"{reading_id}.png")
-    if not os.path.exists(file_path):
-        raise HTTPException(status_code=404, detail="Image file not found")
+    # Proxy from OSS to avoid default domain forced download
+    async with httpx.AsyncClient() as client:
+        resp = await client.get(reading.share_image_url)
+        if resp.status_code != 200:
+            raise HTTPException(status_code=502, detail="Failed to fetch image")
 
-    return FileResponse(file_path, media_type="image/png", filename=f"tarot_{reading_id}.png")
+    return Response(
+        content=resp.content,
+        media_type="image/jpeg",
+        headers={"Content-Disposition": f"inline; filename=tarot_{reading_id}.jpg"},
+    )

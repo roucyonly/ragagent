@@ -5,6 +5,7 @@ const routes = [
   { path: '/auth', name: 'Auth', component: () => import('../views/AuthPage.vue') },
   { path: '/fortune', name: 'Fortune', component: () => import('../views/FortunePage.vue') },
   { path: '/cards', name: 'Cards', component: () => import('../views/CardRevealPage.vue') },
+  { path: '/result/:readingId', name: 'Result', component: () => import('../views/CardRevealPage.vue'), props: { skipToReveal: true } },
   { path: '/payment/:readingId', name: 'Payment', component: () => import('../views/PaymentPage.vue') },
   { path: '/detail/:readingId', name: 'Detail', component: () => import('../views/DetailedReadingPage.vue') },
   { path: '/share/:readingId', name: 'Share', component: () => import('../views/SharePage.vue') },

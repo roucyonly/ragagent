@@ -66,6 +66,7 @@
         <button class="btn-primary" @click="router.push(`/payment/${readingStore.currentReadingId}`)">
           解锁完整解读
         </button>
+        <button class="btn-back" @click="router.push(props.skipToReveal ? '/profile' : '/fortune')">返回</button>
       </div>
     </div>
   </div>
@@ -75,11 +76,14 @@
 
 <script setup>
 import { ref, onMounted } from 'vue'
-import { useRouter } from 'vue-router'
+import { useRouter, useRoute } from 'vue-router'
 import { useReadingStore } from '../stores/reading'
+import { getReading } from '../api/reading'
 import bgImg from '../assets/taroter.jpg'
 
+const props = defineProps({ skipToReveal: Boolean })
 const router = useRouter()
+const route = useRoute()
 const readingStore = useReadingStore()
 
 const CARD_COUNT = 78
@@ -240,7 +244,28 @@ function startTypewriter() {
   }, 30)
 }
 
-onMounted(() => {
+onMounted(async () => {
+  // Skip directly to reveal for history re-entry — fetch from API
+  if (props.skipToReveal) {
+    const readingId = route.params.readingId
+    if (!readingId) {
+      router.push('/profile')
+      return
+    }
+    try {
+      const { data } = await getReading(readingId)
+      readingStore.currentReadingId = data.id
+      readingStore.cardsDrawn = data.cards_drawn || []
+      readingStore.briefReading = data.brief_reading || ''
+    } catch {
+      router.push('/profile')
+      return
+    }
+    phase.value = 'reveal'
+    await startReveal()
+    return
+  }
+
   if (!readingStore.question && !readingStore.readingPromise) {
     router.push('/fortune')
     return
@@ -393,5 +418,10 @@ onMounted(() => {
 .reading-text { font-size: var(--font-size-base); line-height: 1.8; color: var(--color-text); white-space: pre-wrap; }
 .cursor { animation: blink 0.8s infinite; color: var(--color-accent); }
 @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
-.cta { margin-top: 8px; padding-bottom: 20px; }
+.cta { margin-top: 8px; padding-bottom: 20px; display: flex; flex-direction: column; gap: 10px; }
+.btn-back {
+  background: none; border: 1px solid var(--color-border);
+  padding: 12px; border-radius: var(--radius); color: var(--color-text-muted);
+  font-size: var(--font-size-base);
+}
 </style>

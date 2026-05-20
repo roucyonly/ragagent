@@ -33,6 +33,12 @@ class Settings(BaseSettings):
 
     READING_PRICE_CENTS: int = 990
 
+    OSS_ACCESS_KEY_ID: str = ""
+    OSS_ACCESS_KEY_SECRET: str = ""
+    OSS_ENDPOINT: str = ""
+    OSS_BUCKET_NAME: str = ""
+    OSS_CDN_DOMAIN: str = ""
+
     STATIC_DIR: str = os.path.join(os.path.dirname(os.path.dirname(__file__)), "static")
     DATA_DIR: str = os.path.join(os.path.dirname(os.path.dirname(__file__)), "data")
     TEMPLATES_DIR: str = os.path.join(os.path.dirname(os.path.dirname(__file__)), "templates")

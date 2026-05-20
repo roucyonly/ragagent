@@ -36,8 +36,23 @@ def _render_image(html_content: str, output_path: str):
         browser = p.chromium.launch()
         page = browser.new_page(viewport={"width": 375, "height": 1200})
         page.set_content(html_content, wait_until="networkidle")
-        page.screenshot(path=output_path, full_page=True)
+        page.screenshot(path=output_path, full_page=True, type="jpeg", quality=90)
         browser.close()
+
+
+def _upload_to_oss(local_path: str, object_key: str) -> str:
+    import oss2
+
+    auth = oss2.Auth(settings.OSS_ACCESS_KEY_ID, settings.OSS_ACCESS_KEY_SECRET)
+    bucket = oss2.Bucket(auth, settings.OSS_ENDPOINT, settings.OSS_BUCKET_NAME)
+    bucket.put_object_from_file(
+        object_key, local_path,
+        headers={'Content-Type': 'image/jpeg', 'x-oss-object-acl': 'public-read'},
+    )
+
+    if settings.OSS_CDN_DOMAIN:
+        return f"https://{settings.OSS_CDN_DOMAIN}/{object_key}"
+    return f"https://{settings.OSS_BUCKET_NAME}.{settings.OSS_ENDPOINT}/{object_key}"
 
 
 async def generate_share_image(reading_id: str, reading_data: dict, user_data: dict) -> str:
@@ -70,8 +85,14 @@ async def generate_share_image(reading_id: str, reading_data: dict, user_data: d
 
     output_dir = os.path.join(settings.STATIC_DIR, "generated")
     os.makedirs(output_dir, exist_ok=True)
-    output_path = os.path.join(output_dir, f"{reading_id}.png")
+    output_path = os.path.join(output_dir, f"{reading_id}.jpg")
 
     await asyncio.to_thread(_render_image, html_content, output_path)
 
-    return f"/static/generated/{reading_id}.png"
+    # Upload to OSS if configured
+    if settings.OSS_ACCESS_KEY_ID and settings.OSS_BUCKET_NAME:
+        object_key = f"tarot/{reading_id}.jpg"
+        image_url = await asyncio.to_thread(_upload_to_oss, output_path, object_key)
+        return image_url
+
+    return f"/static/generated/{reading_id}.jpg"
