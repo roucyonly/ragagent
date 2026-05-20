@@ -8,8 +8,11 @@
 
     <div class="loading-spinner" v-if="loading">正在生成详细解读，请稍候...</div>
 
-    <div class="detail-content fade-in" v-else-if="detail">
-      <div class="detail-text" v-html="formattedDetail"></div>
+    <div class="detail-sections fade-in" v-else-if="detail">
+      <div v-for="(sec, idx) in sections" :key="idx" class="detail-section">
+        <h3 class="section-heading" v-if="sec.title">✦ {{ sec.title }} ✦</h3>
+        <div class="section-body" v-html="sec.body"></div>
+      </div>
     </div>
 
     <div class="actions fade-in" v-if="detail">
@@ -22,6 +25,7 @@
 
 <script setup>
 import { ref, computed, onMounted } from 'vue'
+import { marked } from 'marked'
 import { useRouter, useRoute } from 'vue-router'
 import { getReading, generateDetail } from '../api/reading'
 import { generateShareImage } from '../api/reading'
@@ -34,11 +38,34 @@ const loading = ref(true)
 const sharing = ref(false)
 const detail = ref('')
 
-const formattedDetail = computed(() => {
-  if (!detail.value) return ''
-  return detail.value
-    .replace(/【([^】]+)】/g, '<h3 class="section-heading">$1</h3>')
-    .replace(/\n/g, '<br>')
+const sections = computed(() => {
+  if (!detail.value) return []
+  const result = []
+  const parts = detail.value.split(/(【[^】]+】)/g)
+  let currentTitle = ''
+
+  for (const part of parts) {
+    const match = part.match(/【([^】]+)】/)
+    if (match) {
+      if (currentTitle || result.length === 0) {
+        // Push previous section
+        if (currentTitle) {
+          result.push({ title: currentTitle, body: '' })
+        }
+      }
+      currentTitle = match[1]
+    } else {
+      const text = part.trim()
+      if (text) {
+        result.push({ title: currentTitle, body: marked(text) })
+        currentTitle = ''
+      }
+    }
+  }
+  if (currentTitle) {
+    result.push({ title: currentTitle, body: '' })
+  }
+  return result
 })
 
 onMounted(async () => {
@@ -71,16 +98,24 @@ async function handleShare() {
 </script>
 
 <style scoped>
-.detail-content {
+.detail-sections { display: flex; flex-direction: column; gap: 12px; margin-bottom: 20px; }
+.detail-section {
   background: rgba(255,255,255,0.04); border-radius: var(--radius); padding: 20px;
-  margin-bottom: 20px; line-height: 1.8;
+  line-height: 1.8;
 }
-.detail-text { font-size: var(--font-size-base); color: var(--color-text); }
-:deep(.section-heading) {
+.section-heading {
   font-size: var(--font-size-lg); color: var(--color-accent);
-  margin: 20px 0 12px; padding-bottom: 8px; border-bottom: 1px solid var(--color-border);
+  margin: 0 0 12px; padding-bottom: 8px; border-bottom: 1px solid var(--color-border);
 }
-:deep(.section-heading:first-child) { margin-top: 0; }
+.section-body { font-size: var(--font-size-base); color: var(--color-text); }
+.section-body :deep(p) { margin: 8px 0; line-height: 1.8; }
+.section-body :deep(ul), .section-body :deep(ol) { padding-left: 20px; margin: 8px 0; }
+.section-body :deep(li) { margin: 4px 0; }
+.section-body :deep(strong) { color: var(--color-accent); }
+.section-body :deep(blockquote) {
+  border-left: 3px solid var(--color-primary-light); padding-left: 12px;
+  margin: 12px 0; color: var(--color-text-muted);
+}
 .top-bar { margin-bottom: 12px; }
 .back-btn { background: none; border: none; color: var(--color-text-muted); font-size: var(--font-size-sm); }
 .actions { display: flex; gap: 12px; }

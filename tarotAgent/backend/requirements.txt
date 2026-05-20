@@ -13,3 +13,4 @@ openai==1.59.5
 anthropic==0.42.0
 alembic==1.14.1
 oss2==2.19.1
+Markdown==3.7

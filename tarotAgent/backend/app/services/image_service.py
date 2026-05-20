@@ -1,4 +1,5 @@
 import asyncio
+import markdown
 import os
 import re
 
@@ -18,14 +19,14 @@ def _parse_sections(detail_text: str) -> list[dict]:
     sections = []
     if parts and parts[0].strip():
         if len(parts) >= 2:
-            sections.append({"label": "✦ 引言 ✦", "content": parts[0].strip()})
+            sections.append({"label": "✦ 引言 ✦", "content": markdown.markdown(parts[0].strip())})
         else:
-            return [{"label": "✦ 完整解读 ✦", "content": detail_text}]
+            return [{"label": "✦ 完整解读 ✦", "content": markdown.markdown(detail_text)}]
     for i in range(1, len(parts) - 1, 2):
         header = parts[i].strip()
         content = parts[i + 1].strip() if i + 1 < len(parts) else ""
-        sections.append({"label": f"✦ {header} ✦", "content": content})
-    return sections if sections else [{"label": "✦ 完整解读 ✦", "content": detail_text}]
+        sections.append({"label": f"✦ {header} ✦", "content": markdown.markdown(content)})
+    return sections if sections else [{"label": "✦ 完整解读 ✦", "content": markdown.markdown(detail_text)}]
 
 
 def _render_image(html_content: str, output_path: str):
@@ -61,6 +62,7 @@ async def generate_share_image(reading_id: str, reading_data: dict, user_data: d
         cards.append({
             "name_cn": card.get("name_cn", "?"),
             "position_label": POSITION_LABELS.get(card.get("position", ""), card.get("position", "")),
+            "is_reversed": card.get("is_reversed", False),
         })
 
     brief_text = reading_data.get("brief_reading", "") or ""
@@ -75,7 +77,7 @@ async def generate_share_image(reading_id: str, reading_data: dict, user_data: d
 
     template = env.get_template("reading_card.html")
     html_content = template.render(
-        user_name=user_data.get("name") or "神秘访客",
+        user_name=user_data.get("nickname") or user_data.get("name") or "神秘访客",
         topic=reading_data.get("topic_name", ""),
         cards=cards,
         brief=brief_text[:300] + ("..." if len(brief_text) > 300 else ""),

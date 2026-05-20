@@ -36,7 +36,7 @@ async def gen_image(
         "detailed_reading": reading.detailed_reading,
         "created_at": str(reading.created_at),
     }
-    user_data = {"name": user.name}
+    user_data = {"name": user.name, "nickname": user.nickname}
 
     image_url = await generate_share_image(reading_id, reading_data, user_data)
 
