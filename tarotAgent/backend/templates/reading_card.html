@@ -12,120 +12,63 @@
     color: #f0e6ff;
     padding: 30px 24px;
   }
-  .header {
-    text-align: center;
-    margin-bottom: 24px;
-  }
-  .header .app-name {
-    font-size: 14px;
-    color: #b794d6;
-    letter-spacing: 4px;
-    margin-bottom: 8px;
-  }
+  .header { text-align: center; margin-bottom: 24px; }
+  .header .app-name { font-size: 14px; color: #b794d6; letter-spacing: 4px; margin-bottom: 8px; }
   .header h1 {
     font-size: 22px;
     background: linear-gradient(135deg, #f6d365, #fda085);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent;
     margin-bottom: 4px;
   }
-  .header .meta {
-    font-size: 12px;
-    color: #9b7fbf;
-  }
-  .cards-row {
-    display: flex;
-    justify-content: center;
-    gap: 12px;
-    margin: 20px 0;
-  }
-  .card-slot {
-    width: 90px;
-    text-align: center;
-  }
+  .header .meta { font-size: 12px; color: #9b7fbf; }
+  .cards-row { display: flex; justify-content: center; gap: 12px; margin: 20px 0; }
+  .card-slot { width: 90px; text-align: center; }
   .card-slot .card-box {
-    width: 90px;
-    height: 130px;
+    width: 90px; height: 130px;
     background: linear-gradient(135deg, #3d2080, #5b2d99);
-    border: 1px solid #7c4dba;
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 16px;
-    font-weight: bold;
-    color: #f6d365;
-    margin-bottom: 6px;
+    border: 1px solid #7c4dba; border-radius: 8px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 16px; font-weight: bold; color: #f6d365; margin-bottom: 6px;
   }
-  .card-slot .position {
-    font-size: 11px;
-    color: #b794d6;
-  }
-  .card-slot .card-name {
-    font-size: 12px;
-    color: #f0e6ff;
-    margin-top: 2px;
-  }
-  .content {
-    background: rgba(255,255,255,0.06);
-    border-radius: 12px;
-    padding: 20px;
-    margin-top: 16px;
-  }
-  .content .label {
-    font-size: 12px;
-    color: #b794d6;
-    margin-bottom: 8px;
-    letter-spacing: 2px;
-  }
-  .content .text {
-    font-size: 14px;
-    line-height: 1.8;
-    color: #e0d0f0;
-  }
-  .footer {
-    text-align: center;
-    margin-top: 24px;
-    padding-top: 16px;
-    border-top: 1px solid rgba(255,255,255,0.1);
-  }
-  .footer .brand {
-    font-size: 12px;
-    color: #7c4dba;
-  }
-  .footer .date {
-    font-size: 11px;
-    color: #5b3d80;
-    margin-top: 4px;
-  }
+  .card-slot .position { font-size: 11px; color: #b794d6; }
+  .card-slot .card-name { font-size: 12px; color: #f0e6ff; margin-top: 2px; }
+  .section { background: rgba(255,255,255,0.06); border-radius: 12px; padding: 16px 20px; margin-top: 14px; }
+  .section .label { font-size: 12px; color: #b794d6; margin-bottom: 8px; letter-spacing: 2px; }
+  .section .text { font-size: 13px; line-height: 1.9; color: #e0d0f0; word-break: break-word; }
+  .section .text h3 { font-size: 14px; color: #f6d365; margin: 14px 0 8px; }
+  .footer { text-align: center; margin-top: 24px; padding-top: 16px; border-top: 1px solid rgba(255,255,255,0.1); }
+  .footer .brand { font-size: 12px; color: #7c4dba; }
+  .footer .date { font-size: 11px; color: #5b3d80; margin-top: 4px; }
 </style>
 </head>
 <body>
   <div class="header">
     <div class="app-name">✦ TAROT READING ✦</div>
     <h1>{{ topic }}</h1>
-    <div class="meta">{{ user_name }} · {{ date[:10] if date and date|length > 10 else date }}</div>
+    <div class="meta">{{ user_name }} · {{ date_display }}</div>
   </div>
 
   <div class="cards-row">
     {% for card in cards %}
     <div class="card-slot">
       <div class="card-box">{{ card.name_cn[:2] if card.name_cn else '?' }}</div>
-      <div class="position">{{ {'past':'过去','present':'现在','future':'未来'}.get(card.position, card.position) }}</div>
+      <div class="position">{{ card.position_label }}</div>
       <div class="card-name">{{ card.name_cn }}</div>
     </div>
     {% endfor %}
   </div>
 
-  <div class="content">
-    <div class="label">✦ 简要解读 ✦</div>
-    <div class="text">{{ brief[:300] }}{% if brief|length > 300 %}...{% endif %}</div>
+  {% if sections %}
+  {% for section in sections %}
+  <div class="section">
+    <div class="label">{{ section.label }}</div>
+    <div class="text">{{ section.content }}</div>
   </div>
-
-  {% if detail_summary %}
-  <div class="content" style="margin-top: 12px;">
-    <div class="label">✦ 深度解析节选 ✦</div>
-    <div class="text">{{ detail_summary }}...</div>
+  {% endfor %}
+  {% else %}
+  <div class="section">
+    <div class="label">✦ 解读 ✦</div>
+    <div class="text">{{ brief }}</div>
   </div>
   {% endif %}
 
