@@ -1,0 +1,4338 @@
+{
+  "cards": [
+    {
+      "card_id": 0,
+      "name_en": "The Fool",
+      "name_cn": "愚者",
+      "arcana": "Major",
+      "suit": null,
+      "number": 0,
+      "element": "Air",
+      "keywords": {
+        "upright": [
+          "new beginnings",
+          "innocence",
+          "spontaneity"
+        ],
+        "upright_cn": [
+          "新的开始",
+          "天真",
+          "自发"
+        ],
+        "reversed": [
+          "recklessness",
+          "risk-taking"
+        ],
+        "reversed_cn": [
+          "鲁莽",
+          "冒险"
+        ]
+      },
+      "meanings": {
+        "upright": "A fresh start, a leap of faith, embarking on a new journey.",
+        "upright_cn": "一个新的开始，一次信仰的飞跃，踏上一段新的旅程。",
+        "reversed": "Holding back, recklessness, risk-taking without thought.",
+        "reversed_cn": "犹豫不决，鲁莽行事，不加思考地冒险。"
+      },
+      "topic_meanings": {
+        "love": {
+          "upright_cn": "在感情中象征着一段新恋情的开始，保持开放和天真的心态去迎接爱。",
+          "reversed_cn": "逆位时可能表示你在感情中过于鲁莽或不够成熟。"
+        },
+        "career": {
+          "upright_cn": "事业上预示着新的机会和职业方向的转变。",
+          "reversed_cn": "逆位时提醒你在职业决策中不要过于冲动。"
+        },
+        "destiny": {
+          "upright_cn": "正缘方面代表命运为你安排了一段全新的缘分。",
+          "reversed_cn": "逆位时暗示你可能还没准备好迎接命中注定的那个人。"
+        },
+        "family": {
+          "upright_cn": "家庭关系中意味着新的家庭成员或关系的新阶段。",
+          "reversed_cn": "逆位时可能暗示家庭关系中的不成熟或轻率。"
+        },
+        "general": {
+          "upright_cn": "整体运势象征着新的起点和无限可能。",
+          "reversed_cn": "逆位时提醒你做事要三思而后行。"
+        }
+      }
+    },
+    {
+      "card_id": 1,
+      "name_en": "The Magician",
+      "name_cn": "魔术师",
+      "arcana": "Major",
+      "suit": null,
+      "number": 1,
+      "element": "Mercury",
+      "keywords": {
+        "upright": [
+          "manifestation",
+          "power",
+          "resourcefulness"
+        ],
+        "upright_cn": [
+          "显化",
+          "力量",
+          "足智多谋"
+        ],
+        "reversed": [
+          "manipulation",
+          "poor planning"
+        ],
+        "reversed_cn": [
+          "操纵",
+          "计划不周"
+        ]
+      },
+      "meanings": {
+        "upright": "You have all the resources you need to succeed.",
+        "upright_cn": "你拥有成功所需的一切资源和能力。",
+        "reversed": "Talents being wasted, manipulation of others.",
+        "reversed_cn": "才华被浪费，或者被人操纵。"
+      },
+      "topic_meanings": {
+        "love": {
+          "upright_cn": "感情中你拥有吸引对方的一切魅力和智慧，大胆表达自己。",
+          "reversed_cn": "逆位时注意不要在感情中使用花言巧语或不诚实的方式。"
+        },
+        "career": {
+          "upright_cn": "事业上你正处于展现才华的最佳时机，行动力十足。",
+          "reversed_cn": "逆位时提醒你避免耍小聪明，脚踏实地更重要。"
+        },
+        "destiny": {
+          "upright_cn": "正缘降临，你有能力创造属于自己的美好姻缘。",
+          "reversed_cn": "逆位时需警惕虚情假意，真正的缘分需要真诚。"
+        },
+        "family": {
+          "upright_cn": "家庭中你是解决问题的核心力量，善于沟通协调。",
+          "reversed_cn": "逆位时注意不要用计谋操控家人关系。"
+        },
+        "general": {
+          "upright_cn": "整体运势强劲，你的能力与机遇完美匹配。",
+          "reversed_cn": "逆位时提醒你诚实面对自己的不足。"
+        }
+      }
+    },
+    {
+      "card_id": 2,
+      "name_en": "The High Priestess",
+      "name_cn": "女祭司",
+      "arcana": "Major",
+      "suit": null,
+      "number": 2,
+      "element": "Moon",
+      "keywords": {
+        "upright": [
+          "intuition",
+          "mystery",
+          "subconscious"
+        ],
+        "upright_cn": [
+          "直觉",
+          "神秘",
+          "潜意识"
+        ],
+        "reversed": [
+          "secrets",
+          "withdrawal"
+        ],
+        "reversed_cn": [
+          "秘密",
+          "退缩"
+        ]
+      },
+      "meanings": {
+        "upright": "Trust your intuition, listen to your inner voice.",
+        "upright_cn": "相信你的直觉，倾听内心的声音。",
+        "reversed": "Ignoring intuition, secrets being kept from you.",
+        "reversed_cn": "忽视直觉，有人对你隐瞒了秘密。"
+      },
+      "topic_meanings": {
+        "love": {
+          "upright_cn": "感情中倾听内心的感受，缘分可能在静默中悄然降临。",
+          "reversed_cn": "逆位时注意感情中可能存在未说出口的隐情。"
+        },
+        "career": {
+          "upright_cn": "事业发展需要更多直觉引导，答案不在表面。",
+          "reversed_cn": "逆位时提醒你关注职场中隐藏的信息。"
+        },
+        "destiny": {
+          "upright_cn": "正缘需要在安静和自省中感知，缘在冥冥之中。",
+          "reversed_cn": "逆位时你可能在逃避内心的真实感受。"
+        },
+        "family": {
+          "upright_cn": "家庭关系需要更多倾听和理解，静心感受家人的真实需求。",
+          "reversed_cn": "逆位时家庭中可能有未解开的秘密或误解。"
+        },
+        "general": {
+          "upright_cn": "整体运势提示你需要向内探索，答案就在心中。",
+          "reversed_cn": "逆位时提醒你不要太依赖理性分析，学会感受。"
+        }
+      }
+    },
+    {
+      "card_id": 3,
+      "name_en": "The Empress",
+      "name_cn": "女皇",
+      "arcana": "Major",
+      "suit": null,
+      "number": 3,
+      "element": "Venus",
+      "keywords": {
+        "upright": [
+          "fertility",
+          "nature",
+          "abundance"
+        ],
+        "upright_cn": [
+          "丰饶",
+          "自然",
+          "富足"
+        ],
+        "reversed": [
+          "dependence",
+          "smothering"
+        ],
+        "reversed_cn": [
+          "依赖",
+          "过度保护"
+        ]
+      },
+      "meanings": {
+        "upright": "Abundance, nurturing energy, creative growth.",
+        "upright_cn": "丰饶的能量，滋养的力量，创造性的成长。",
+        "reversed": "Creative block, dependence on others.",
+        "reversed_cn": "创造力受阻，过度依赖他人。"
+      },
+      "topic_meanings": {
+        "love": {
+          "upright_cn": "感情充满温暖和滋养，是一段丰盈美好的关系。",
+          "reversed_cn": "逆位时注意在感情中不要过度付出或控制对方。"
+        },
+        "career": {
+          "upright_cn": "事业如春日般蓬勃发展，创造力旺盛，项目顺利推进。",
+          "reversed_cn": "逆位时事业可能遇到瓶颈，需要重新激发创造力。"
+        },
+        "destiny": {
+          "upright_cn": "正缘如花开满枝，命中注定的人会给你带来温暖和安全感。",
+          "reversed_cn": "逆位时提醒你先学会爱自己，才能吸引到对的人。"
+        },
+        "family": {
+          "upright_cn": "家庭和谐美满，充满温馨和关爱。",
+          "reversed_cn": "逆位时注意家庭关系中的过度干涉。"
+        },
+        "general": {
+          "upright_cn": "整体运势丰盈，生活各方面都在蓬勃发展。",
+          "reversed_cn": "逆位时提醒你关注自己的需求，不要一味迁就他人。"
+        }
+      }
+    },
+    {
+      "card_id": 4,
+      "name_en": "The Emperor",
+      "name_cn": "皇帝",
+      "arcana": "Major",
+      "suit": null,
+      "number": 4,
+      "element": "Aries",
+      "keywords": {
+        "upright": [
+          "authority",
+          "structure",
+          "stability"
+        ],
+        "upright_cn": [
+          "权威",
+          "结构",
+          "稳定"
+        ],
+        "reversed": [
+          "tyranny",
+          "rigidity"
+        ],
+        "reversed_cn": [
+          "专制",
+          "固执"
+        ]
+      },
+      "meanings": {
+        "upright": "Leadership, authority, establishing order and structure.",
+        "upright_cn": "领导力，权威感，建立秩序和结构。",
+        "reversed": "Excessive control, rigidity, domination.",
+        "reversed_cn": "过度控制，固执己见，强势支配。"
+      },
+      "topic_meanings": {
+        "love": {
+          "upright_cn": "感情中寻求稳定和承诺，对方是一个可靠的人。",
+          "reversed_cn": "逆位时注意关系中是否存在控制欲过强的问题。"
+        },
+        "career": {
+          "upright_cn": "事业上获得领导地位，或遇到强有力的支持者。",
+          "reversed_cn": "逆位时提醒你避免独断专行，倾听团队意见。"
+        },
+        "destiny": {
+          "upright_cn": "正缘是一位成熟稳重、有担当的人。",
+          "reversed_cn": "逆位时注意不要被权威感迷惑，看清对方本质。"
+        },
+        "family": {
+          "upright_cn": "家庭关系中的秩序和稳定，长辈的支持。",
+          "reversed_cn": "逆位时家庭中可能存在权威冲突。"
+        },
+        "general": {
+          "upright_cn": "整体运势稳固，是打基础和建立长期规划的好时机。",
+          "reversed_cn": "逆位时提醒你灵活变通，不要过于僵化。"
+        }
+      }
+    },
+    {
+      "card_id": 5,
+      "name_en": "The Hierophant",
+      "name_cn": "教皇",
+      "arcana": "Major",
+      "suit": null,
+      "number": 5,
+      "element": "Taurus",
+      "keywords": {
+        "upright": [
+          "tradition",
+          "conformity",
+          "education"
+        ],
+        "upright_cn": [
+          "传统",
+          "遵从",
+          "教育"
+        ],
+        "reversed": [
+          "rebellion",
+          "subversiveness"
+        ],
+        "reversed_cn": [
+          "叛逆",
+          "颠覆"
+        ]
+      },
+      "meanings": {
+        "upright": "Seeking guidance from tradition, spiritual wisdom.",
+        "upright_cn": "从传统中寻求指引，获得精神上的智慧。",
+        "reversed": "Breaking from tradition, finding your own path.",
+        "reversed_cn": "打破传统束缚，走出属于自己的路。"
+      },
+      "topic_meanings": {
+        "love": {
+          "upright_cn": "感情中遵循传统的方式，可能发展为稳定的承诺关系。",
+          "reversed_cn": "逆位时你可能需要打破感情中的陈规，追求真正的内心所向。"
+        },
+        "career": {
+          "upright_cn": "事业发展遵循既定路径，有导师或前辈的指导。",
+          "reversed_cn": "逆位时鼓励你走出舒适区，尝试不同的职业道路。"
+        },
+        "destiny": {
+          "upright_cn": "正缘可能来自传统渠道，如朋友介绍或家庭认可。",
+          "reversed_cn": "逆位时你的缘分可能来自意想不到的地方。"
+        },
+        "family": {
+          "upright_cn": "家庭和睦，遵循传统价值观，关系融洽。",
+          "reversed_cn": "逆位时你可能与家人的观念产生冲突。"
+        },
+        "general": {
+          "upright_cn": "整体运势平稳，适合学习新知识和接受指导。",
+          "reversed_cn": "逆位时是打破旧模式、追求个性的好时机。"
+        }
+      }
+    },
+    {
+      "card_id": 6,
+      "name_en": "The Lovers",
+      "name_cn": "恋人",
+      "arcana": "Major",
+      "suit": null,
+      "number": 6,
+      "element": "Gemini",
+      "keywords": {
+        "upright": [
+          "love",
+          "harmony",
+          "relationships"
+        ],
+        "upright_cn": [
+          "爱情",
+          "和谐",
+          "关系"
+        ],
+        "reversed": [
+          "disharmony",
+          "imbalance"
+        ],
+        "reversed_cn": [
+          "不和谐",
+          "失衡"
+        ]
+      },
+      "meanings": {
+        "upright": "Harmonious relationships, alignment of values, love.",
+        "upright_cn": "和谐的关系，价值观的契合，真挚的爱情。",
+        "reversed": "Imbalance, misalignment of values, indecision.",
+        "reversed_cn": "关系失衡，价值观不合，犹豫不决。"
+      },
+      "topic_meanings": {
+        "love": {
+          "upright_cn": "感情运势极佳，真挚的爱情正在发生或即将到来。",
+          "reversed_cn": "逆位时感情中可能面临选择困难或价值观冲突。"
+        },
+        "career": {
+          "upright_cn": "事业中有良好的合作关系，伙伴之间互相支持。",
+          "reversed_cn": "逆位时注意工作中的合作关系可能出现裂痕。"
+        },
+        "destiny": {
+          "upright_cn": "正缘牌！你与命中注定的那个人灵犀相通。",
+          "reversed_cn": "逆位时提醒你审视是否在对的关系中犹豫不决。"
+        },
+        "family": {
+          "upright_cn": "家庭关系中充满爱与和谐，彼此珍惜。",
+          "reversed_cn": "逆位时家庭中可能需要在两种选择间做出抉择。"
+        },
+        "general": {
+          "upright_cn": "整体运势充满爱与和谐，面临重要但美好的选择。",
+          "reversed_cn": "逆位时提醒你面对选择时不要逃避。"
+        }
+      }
+    },
+    {
+      "card_id": 7,
+      "name_en": "The Chariot",
+      "name_cn": "战车",
+      "arcana": "Major",
+      "suit": null,
+      "number": 7,
+      "element": "Cancer",
+      "keywords": {
+        "upright": [
+          "willpower",
+          "success",
+          "determination"
+        ],
+        "upright_cn": [
+          "意志力",
+          "成功",
+          "决心"
+        ],
+        "reversed": [
+          "aggression",
+          "no direction"
+        ],
+        "reversed_cn": [
+          "好斗",
+          "迷失方向"
+        ]
+      },
+      "meanings": {
+        "upright": "Victory through determination and willpower.",
+        "upright_cn": "通过坚定的意志力取得胜利。",
+        "reversed": "Lack of direction, aggression without purpose.",
+        "reversed_cn": "缺乏方向感，盲目地好斗。"
+      },
+      "topic_meanings": {
+        "love": {
+          "upright_cn": "感情中你充满决心和行动力，有望赢得心仪之人的心。",
+          "reversed_cn": "逆位时感情可能因过于强势而遭遇挫折。"
+        },
+        "career": {
+          "upright_cn": "事业上势如破竹，凭借坚定的意志克服一切障碍。",
+          "reversed_cn": "逆位时提醒你调整方向，不要盲目推进。"
+        },
+        "destiny": {
+          "upright_cn": "正缘需要你主动出击，坚定地追求。",
+          "reversed_cn": "逆位时你可能因为太急切而错过缘分的信号。"
+        },
+        "family": {
+          "upright_cn": "家庭事务中你以坚定的态度解决问题，掌控全局。",
+          "reversed_cn": "逆位时注意不要把家庭变成战场。"
+        },
+        "general": {
+          "upright_cn": "整体运势强劲，胜利在望，勇往直前即可。",
+          "reversed_cn": "逆位时提醒你先确定方向再行动。"
+        }
+      }
+    },
+    {
+      "card_id": 8,
+      "name_en": "Strength",
+      "name_cn": "力量",
+      "arcana": "Major",
+      "suit": null,
+      "number": 8,
+      "element": "Leo",
+      "keywords": {
+        "upright": [
+          "courage",
+          "patience",
+          "compassion"
+        ],
+        "upright_cn": [
+          "勇气",
+          "耐心",
+          "慈悲"
+        ],
+        "reversed": [
+          "self-doubt",
+          "weakness"
+        ],
+        "reversed_cn": [
+          "自我怀疑",
+          "软弱"
+        ]
+      },
+      "meanings": {
+        "upright": "Inner strength, courage, gentle power overcomes all.",
+        "upright_cn": "内在的力量，勇气，温柔的力量能战胜一切。",
+        "reversed": "Self-doubt, insecurity, lack of confidence.",
+        "reversed_cn": "自我怀疑，不安全感，缺乏信心。"
+      },
+      "topic_meanings": {
+        "love": {
+          "upright_cn": "感情中需要用温柔和耐心来维系，爱是最大的力量。",
+          "reversed_cn": "逆位时你可能对这段感情缺乏信心。"
+        },
+        "career": {
+          "upright_cn": "事业上的成功来自内心的坚韧和持久的努力。",
+          "reversed_cn": "逆位时提醒你重拾自信，你比自己想象的更强大。"
+        },
+        "destiny": {
+          "upright_cn": "正缘需要你用耐心和温柔去等待和吸引。",
+          "reversed_cn": "逆位时你可能因为不自信而错过缘分。"
+        },
+        "family": {
+          "upright_cn": "用爱和耐心化解家庭矛盾，温柔是最强的力量。",
+          "reversed_cn": "逆位时你可能在家庭中感到无力。"
+        },
+        "general": {
+          "upright_cn": "整体运势稳健，你拥有克服困难的内在力量。",
+          "reversed_cn": "逆位时提醒你重新连接内在的力量之源。"
+        }
+      }
+    },
+    {
+      "card_id": 9,
+      "name_en": "The Hermit",
+      "name_cn": "隐者",
+      "arcana": "Major",
+      "suit": null,
+      "number": 9,
+      "element": "Virgo",
+      "keywords": {
+        "upright": [
+          "introspection",
+          "solitude",
+          "wisdom"
+        ],
+        "upright_cn": [
+          "内省",
+          "独处",
+          "智慧"
+        ],
+        "reversed": [
+          "isolation",
+          "loneliness"
+        ],
+        "reversed_cn": [
+          "孤立",
+          "孤独"
+        ]
+      },
+      "meanings": {
+        "upright": "A time for soul-searching and inner guidance.",
+        "upright_cn": "一段灵魂探索和内在指引的时期。",
+        "reversed": "Isolation, withdrawal from the world.",
+        "reversed_cn": "过度封闭自我，与世界脱节。"
+      },
+      "topic_meanings": {
+        "love": {
+          "upright_cn": "感情中需要独处和思考的空间，了解自己真正想要什么。",
+          "reversed_cn": "逆位时你可能过度封闭自己，错过了接触他人的机会。"
+        },
+        "career": {
+          "upright_cn": "事业上适合深造学习，在独处中获得灵感和智慧。",
+          "reversed_cn": "逆位时提醒你不要把自己孤立起来。"
+        },
+        "destiny": {
+          "upright_cn": "正缘可能在你独处和自我成长的过程中出现。",
+          "reversed_cn": "逆位时你可能因为过于封闭而看不到身边的缘分。"
+        },
+        "family": {
+          "upright_cn": "家庭中需要给自己一些独处的空间来思考和充电。",
+          "reversed_cn": "逆位时注意不要因为过于独处而疏远家人。"
+        },
+        "general": {
+          "upright_cn": "整体运势指向内省和自我成长，是获取智慧的时期。",
+          "reversed_cn": "逆位时提醒你适度社交，不要完全与世隔绝。"
+        }
+      }
+    },
+    {
+      "card_id": 10,
+      "name_en": "Wheel of Fortune",
+      "name_cn": "命运之轮",
+      "arcana": "Major",
+      "suit": null,
+      "number": 10,
+      "element": "Jupiter",
+      "keywords": {
+        "upright": [
+          "good luck",
+          "karma",
+          "cycles"
+        ],
+        "upright_cn": [
+          "好运",
+          "因果",
+          "循环"
+        ],
+        "reversed": [
+          "bad luck",
+          "resistance"
+        ],
+        "reversed_cn": [
+          "厄运",
+          "抗拒"
+        ]
+      },
+      "meanings": {
+        "upright": "A turning point, good fortune, destiny at work.",
+        "upright_cn": "转折点，好运降临，命运之轮在转动。",
+        "reversed": "Bad luck, resisting change, negative cycles.",
+        "reversed_cn": "运气不佳，抗拒改变，负面循环。"
+      },
+      "topic_meanings": {
+        "love": {
+          "upright_cn": "感情迎来转机，命运的安排正在展开。",
+          "reversed_cn": "逆位时感情可能陷入反复循环的模式。"
+        },
+        "career": {
+          "upright_cn": "事业运势大转，意想不到的好机会正在到来。",
+          "reversed_cn": "逆位时提醒你接受变化，不要抗拒命运的安排。"
+        },
+        "destiny": {
+          "upright_cn": "正缘的时机已到！命运之轮为你转动。",
+          "reversed_cn": "逆位时可能需要再等待一段时间。"
+        },
+        "family": {
+          "upright_cn": "家庭运势好转，之前的困难即将得到改善。",
+          "reversed_cn": "逆位时家庭中可能有周期性的问题需要打破。"
+        },
+        "general": {
+          "upright_cn": "整体运势出现重大转机，好运正在降临。",
+          "reversed_cn": "逆位时提醒你顺应变化，一切都在轮回之中。"
+        }
+      }
+    },
+    {
+      "card_id": 11,
+      "name_en": "Justice",
+      "name_cn": "正义",
+      "arcana": "Major",
+      "suit": null,
+      "number": 11,
+      "element": "Libra",
+      "keywords": {
+        "upright": [
+          "fairness",
+          "truth",
+          "cause and effect"
+        ],
+        "upright_cn": [
+          "公正",
+          "真相",
+          "因果"
+        ],
+        "reversed": [
+          "unfairness",
+          "dishonesty"
+        ],
+        "reversed_cn": [
+          "不公",
+          "不诚实"
+        ]
+      },
+      "meanings": {
+        "upright": "Justice, fairness, truth. Cause and effect.",
+        "upright_cn": "公正，公平，真相。因果报应。",
+        "reversed": "Unfairness, lack of accountability, dishonesty.",
+        "reversed_cn": "不公平，缺乏责任感，不诚实。"
+      },
+      "topic_meanings": {
+        "love": {
+          "upright_cn": "感情中得到公正的对待，真诚付出必有回报。",
+          "reversed_cn": "逆位时感情中可能存在不公平或不诚实的情况。"
+        },
+        "career": {
+          "upright_cn": "事业上的努力和付出将得到公正的回报。",
+          "reversed_cn": "逆位时注意职场中可能存在不公正的待遇。"
+        },
+        "destiny": {
+          "upright_cn": "正缘是天道酬勤的结果，你值得拥有美好的爱情。",
+          "reversed_cn": "逆位时提醒你审视自己是否在感情中不够诚实。"
+        },
+        "family": {
+          "upright_cn": "家庭关系中公平公正，每个人都得到应有的尊重。",
+          "reversed_cn": "逆位时家庭中可能存在不公正的对待或偏见。"
+        },
+        "general": {
+          "upright_cn": "整体运势公正，种什么因得什么果。",
+          "reversed_cn": "逆位时提醒你反思自己是否逃避了应负的责任。"
+        }
+      }
+    },
+    {
+      "card_id": 12,
+      "name_en": "The Hanged Man",
+      "name_cn": "倒吊人",
+      "arcana": "Major",
+      "suit": null,
+      "number": 12,
+      "element": "Neptune",
+      "keywords": {
+        "upright": [
+          "surrender",
+          "new perspective",
+          "sacrifice"
+        ],
+        "upright_cn": [
+          "顺从",
+          "新视角",
+          "牺牲"
+        ],
+        "reversed": [
+          "delays",
+          "resistance"
+        ],
+        "reversed_cn": [
+          "延迟",
+          "抗拒"
+        ]
+      },
+      "meanings": {
+        "upright": "Pause, surrender, seeing things from a new angle.",
+        "upright_cn": "暂停，顺从，以全新的角度看待事物。",
+        "reversed": "Stalling, indecision, needless sacrifice.",
+        "reversed_cn": "拖延，犹豫不决，不必要的牺牲。"
+      },
+      "topic_meanings": {
+        "love": {
+          "upright_cn": "感情中需要换个角度思考，适当放下执念。",
+          "reversed_cn": "逆位时你可能在不值得的感情中做出无谓的牺牲。"
+        },
+        "career": {
+          "upright_cn": "事业上的暂停是为了更好的出发，换个视角会发现新机遇。",
+          "reversed_cn": "逆位时提醒你不要再拖延，该做决定了。"
+        },
+        "destiny": {
+          "upright_cn": "正缘可能需要你换一种心态去感受，放下才能得到。",
+          "reversed_cn": "逆位时你可能因为抗拒改变而耽误了缘分。"
+        },
+        "family": {
+          "upright_cn": "家庭关系中学会换位思考，你会获得新的理解。",
+          "reversed_cn": "逆位时提醒你停止无谓的牺牲和忍让。"
+        },
+        "general": {
+          "upright_cn": "整体运势需要暂停和反思，以退为进。",
+          "reversed_cn": "逆位时提醒你该行动了，不要再犹豫。"
+        }
+      }
+    },
+    {
+      "card_id": 13,
+      "name_en": "Death",
+      "name_cn": "死神",
+      "arcana": "Major",
+      "suit": null,
+      "number": 13,
+      "element": "Scorpio",
+      "keywords": {
+        "upright": [
+          "endings",
+          "transformation",
+          "transition"
+        ],
+        "upright_cn": [
+          "终结",
+          "转变",
+          "过渡"
+        ],
+        "reversed": [
+          "resistance to change",
+          "stagnation"
+        ],
+        "reversed_cn": [
+          "抗拒改变",
+          "停滞"
+        ]
+      },
+      "meanings": {
+        "upright": "Endings and beginnings, transformation, letting go.",
+        "upright_cn": "结束与开始，蜕变，学会放手。",
+        "reversed": "Resistance to change, fear of endings.",
+        "reversed_cn": "抗拒改变，害怕结束。"
+      },
+      "topic_meanings": {
+        "love": {
+          "upright_cn": "一段感情模式的结束意味着更美好的关系即将诞生。",
+          "reversed_cn": "逆位时你可能在不适合的感情中苦苦坚持。"
+        },
+        "career": {
+          "upright_cn": "事业上的重大转变正在发生，旧的结束是为了新的开始。",
+          "reversed_cn": "逆位时你可能因为害怕改变而错过了转型的机会。"
+        },
+        "destiny": {
+          "upright_cn": "正缘的到来可能伴随着旧有感情观念的彻底改变。",
+          "reversed_cn": "逆位时提醒你放下过去，才能迎接新的缘分。"
+        },
+        "family": {
+          "upright_cn": "家庭关系正在经历深刻的转变，旧的模式在瓦解。",
+          "reversed_cn": "逆位时你可能不愿接受家庭关系的变化。"
+        },
+        "general": {
+          "upright_cn": "整体运势处于重大转变期，蜕变后将是新生。",
+          "reversed_cn": "逆位时提醒你拥抱变化，抗拒只会延长痛苦。"
+        }
+      }
+    },
+    {
+      "card_id": 14,
+      "name_en": "Temperance",
+      "name_cn": "节制",
+      "arcana": "Major",
+      "suit": null,
+      "number": 14,
+      "element": "Sagittarius",
+      "keywords": {
+        "upright": [
+          "balance",
+          "moderation",
+          "patience"
+        ],
+        "upright_cn": [
+          "平衡",
+          "适度",
+          "耐心"
+        ],
+        "reversed": [
+          "imbalance",
+          "excess"
+        ],
+        "reversed_cn": [
+          "失衡",
+          "过度"
+        ]
+      },
+      "meanings": {
+        "upright": "Balance, moderation, harmony, patience.",
+        "upright_cn": "平衡，适度，和谐，耐心。",
+        "reversed": "Imbalance, excess, lack of long-term vision.",
+        "reversed_cn": "失去平衡，过度，缺乏长远眼光。"
+      },
+      "topic_meanings": {
+        "love": {
+          "upright_cn": "感情中需要平衡和耐心，双方互相调和。",
+          "reversed_cn": "逆位时感情可能过于极端或失去平衡。"
+        },
+        "career": {
+          "upright_cn": "事业上保持中庸之道，循序渐进，不急不躁。",
+          "reversed_cn": "逆位时注意工作与生活的平衡，避免过度消耗。"
+        },
+        "destiny": {
+          "upright_cn": "正缘在平衡和谐中出现，不急不缓，水到渠成。",
+          "reversed_cn": "逆位时你可能对感情的需求过于极端。"
+        },
+        "family": {
+          "upright_cn": "家庭关系和谐平衡，各成员之间互相包容。",
+          "reversed_cn": "逆位时家庭中可能有极端行为或失衡的关系。"
+        },
+        "general": {
+          "upright_cn": "整体运势平稳和谐，一切都在恰到好处的节奏中。",
+          "reversed_cn": "逆位时提醒你回归中道，避免极端。"
+        }
+      }
+    },
+    {
+      "card_id": 15,
+      "name_en": "The Devil",
+      "name_cn": "恶魔",
+      "arcana": "Major",
+      "suit": null,
+      "number": 15,
+      "element": "Capricorn",
+      "keywords": {
+        "upright": [
+          "shadow self",
+          "attachment",
+          "bondage"
+        ],
+        "upright_cn": [
+          "阴暗面",
+          "执念",
+          "束缚"
+        ],
+        "reversed": [
+          "releasing bonds",
+          "breakthrough"
+        ],
+        "reversed_cn": [
+          "解脱束缚",
+          "突破"
+        ]
+      },
+      "meanings": {
+        "upright": "Feeling trapped, addiction, unhealthy attachments.",
+        "upright_cn": "感到被困住，上瘾，不健康的执念。",
+        "reversed": "Breaking free, reclaiming power, release.",
+        "reversed_cn": "挣脱束缚，夺回力量，释放。"
+      },
+      "topic_meanings": {
+        "love": {
+          "upright_cn": "感情中可能存在不健康的执着或控制关系。",
+          "reversed_cn": "逆位时你正在从有害的感情模式中解脱出来。"
+        },
+        "career": {
+          "upright_cn": "事业上可能被物质欲望或不健康的工作关系所束缚。",
+          "reversed_cn": "逆位时你开始摆脱限制，重获职业自由。"
+        },
+        "destiny": {
+          "upright_cn": "正缘可能被某些执念所阻碍，需要先放下内心的枷锁。",
+          "reversed_cn": "逆位时你正在突破阻碍正缘的障碍。"
+        },
+        "family": {
+          "upright_cn": "家庭中可能存在不健康的模式或代际问题。",
+          "reversed_cn": "逆位时你正在打破家庭中的负面循环。"
+        },
+        "general": {
+          "upright_cn": "整体运势提醒你审视内心的执念和束缚。",
+          "reversed_cn": "逆位时你正在从困境中解放出来。"
+        }
+      }
+    },
+    {
+      "card_id": 16,
+      "name_en": "The Tower",
+      "name_cn": "高塔",
+      "arcana": "Major",
+      "suit": null,
+      "number": 16,
+      "element": "Mars",
+      "keywords": {
+        "upright": [
+          "upheaval",
+          "revelation",
+          "sudden change"
+        ],
+        "upright_cn": [
+          "剧变",
+          "启示",
+          "突变"
+        ],
+        "reversed": [
+          "avoidance",
+          "fear of change"
+        ],
+        "reversed_cn": [
+          "回避",
+          "恐惧改变"
+        ]
+      },
+      "meanings": {
+        "upright": "Sudden upheaval, revelation, breaking down of structures.",
+        "upright_cn": "突如其来的剧变，启示，旧结构的崩塌。",
+        "reversed": "Avoiding disaster, fear of change.",
+        "reversed_cn": "试图逃避灾难，恐惧改变。"
+      },
+      "topic_meanings": {
+        "love": {
+          "upright_cn": "感情可能经历突如其来的变化，但这种震荡会带来真相。",
+          "reversed_cn": "逆位时你可能试图掩盖感情中的裂痕。"
+        },
+        "career": {
+          "upright_cn": "事业上的突然变动虽然令人措手不及，但会带来更清晰的方向。",
+          "reversed_cn": "逆位时你可能在逃避必要的职业变革。"
+        },
+        "destiny": {
+          "upright_cn": "正缘的到来可能打破你现有的生活框架。",
+          "reversed_cn": "逆位时你可能害怕改变阻碍了缘分的到来。"
+        },
+        "family": {
+          "upright_cn": "家庭可能经历意想不到的变化，但真相会带来重建的机会。",
+          "reversed_cn": "逆位时你可能不愿面对家庭中的现实问题。"
+        },
+        "general": {
+          "upright_cn": "整体运势处于震荡期，但崩塌之后是重建。",
+          "reversed_cn": "逆位时提醒你勇敢面对必要的改变。"
+        }
+      }
+    },
+    {
+      "card_id": 17,
+      "name_en": "The Star",
+      "name_cn": "星星",
+      "arcana": "Major",
+      "suit": null,
+      "number": 17,
+      "element": "Aquarius",
+      "keywords": {
+        "upright": [
+          "hope",
+          "inspiration",
+          "serenity"
+        ],
+        "upright_cn": [
+          "希望",
+          "灵感",
+          "宁静"
+        ],
+        "reversed": [
+          "despair",
+          "disconnection"
+        ],
+        "reversed_cn": [
+          "绝望",
+          "脱节"
+        ]
+      },
+      "meanings": {
+        "upright": "Hope, inspiration, renewal after a storm.",
+        "upright_cn": "希望，灵感，暴风雨后的新生。",
+        "reversed": "Despair, loss of faith, disconnection.",
+        "reversed_cn": "绝望，失去信心，与内心脱节。"
+      },
+      "topic_meanings": {
+        "love": {
+          "upright_cn": "感情中充满希望和温暖，美好的爱情正在向你靠近。",
+          "reversed_cn": "逆位时你可能对感情失去了信心和希望。"
+        },
+        "career": {
+          "upright_cn": "事业前景光明，灵感涌动，未来可期。",
+          "reversed_cn": "逆位时提醒你重新找回对事业的热情。"
+        },
+        "destiny": {
+          "upright_cn": "正缘如星辰般闪耀，命中注定的爱正照亮你的前路。",
+          "reversed_cn": "逆位时你可能因为过去的伤害而不敢再相信缘分。"
+        },
+        "family": {
+          "upright_cn": "家庭关系如星辰般温馨，充满希望和治愈。",
+          "reversed_cn": "逆位时你可能与家人之间感到疏离。"
+        },
+        "general": {
+          "upright_cn": "整体运势充满希望和正能量，一切都在向好的方向发展。",
+          "reversed_cn": "逆位时提醒你重新连接内心的希望之光。"
+        }
+      }
+    },
+    {
+      "card_id": 18,
+      "name_en": "The Moon",
+      "name_cn": "月亮",
+      "arcana": "Major",
+      "suit": null,
+      "number": 18,
+      "element": "Pisces",
+      "keywords": {
+        "upright": [
+          "illusion",
+          "fear",
+          "subconscious"
+        ],
+        "upright_cn": [
+          "幻象",
+          "恐惧",
+          "潜意识"
+        ],
+        "reversed": [
+          "release",
+          "clarity"
+        ],
+        "reversed_cn": [
+          "释放",
+          "清晰"
+        ]
+      },
+      "meanings": {
+        "upright": "Illusion, fear, anxiety, subconscious messages.",
+        "upright_cn": "幻象，恐惧，焦虑，潜意识的讯息。",
+        "reversed": "Clarity emerging, releasing fears.",
+        "reversed_cn": "真相浮现，释放恐惧。"
+      },
+      "topic_meanings": {
+        "love": {
+          "upright_cn": "感情中可能存在幻觉或误解，需要看清真相。",
+          "reversed_cn": "逆位时迷雾正在散去，感情的真实面貌逐渐清晰。"
+        },
+        "career": {
+          "upright_cn": "事业上可能面临不确定性，需要分辨真假信息。",
+          "reversed_cn": "逆位时职场的迷雾正在消散，方向变得明确。"
+        },
+        "destiny": {
+          "upright_cn": "正缘可能被迷雾笼罩，你需要拨开幻象才能看清。",
+          "reversed_cn": "逆位时你对缘分的认知越来越清晰。"
+        },
+        "family": {
+          "upright_cn": "家庭中可能存在隐忧或不为人知的情感暗流。",
+          "reversed_cn": "逆位时家庭中的误解正在被澄清。"
+        },
+        "general": {
+          "upright_cn": "整体运势充满不确定性，需要倾听潜意识的声音。",
+          "reversed_cn": "逆位时真相正在浮现，恐惧正在消散。"
+        }
+      }
+    },
+    {
+      "card_id": 19,
+      "name_en": "The Sun",
+      "name_cn": "太阳",
+      "arcana": "Major",
+      "suit": null,
+      "number": 19,
+      "element": "Sun",
+      "keywords": {
+        "upright": [
+          "joy",
+          "success",
+          "vitality"
+        ],
+        "upright_cn": [
+          "喜悦",
+          "成功",
+          "活力"
+        ],
+        "reversed": [
+          "sadness",
+          "pessimism"
+        ],
+        "reversed_cn": [
+          "悲伤",
+          "悲观"
+        ]
+      },
+      "meanings": {
+        "upright": "Joy, success, vitality, confidence.",
+        "upright_cn": "喜悦，成功，活力，自信。",
+        "reversed": "Temporary sadness, overly optimistic.",
+        "reversed_cn": "暂时的低落，过度乐观。"
+      },
+      "topic_meanings": {
+        "love": {
+          "upright_cn": "感情如阳光般灿烂美好，充满喜悦和温暖。",
+          "reversed_cn": "逆位时感情中可能存在一些小阴霾，但很快就会过去。"
+        },
+        "career": {
+          "upright_cn": "事业蒸蒸日上，成功近在咫尺，充满自信和活力。",
+          "reversed_cn": "逆位时提醒你保持理性，不要被一时的成功冲昏头脑。"
+        },
+        "destiny": {
+          "upright_cn": "正缘如阳光般温暖，你们将共同经历最美好的时光。",
+          "reversed_cn": "逆位时你可能因为一些小挫折而忽略了身边的好缘分。"
+        },
+        "family": {
+          "upright_cn": "家庭充满阳光和欢乐，是阖家幸福的时光。",
+          "reversed_cn": "逆位时家庭中可能有些小遗憾需要调整。"
+        },
+        "general": {
+          "upright_cn": "整体运势极佳！阳光普照，万事如意。",
+          "reversed_cn": "逆位时提醒你保持积极心态，乌云总会散去。"
+        }
+      }
+    },
+    {
+      "card_id": 20,
+      "name_en": "Judgement",
+      "name_cn": "审判",
+      "arcana": "Major",
+      "suit": null,
+      "number": 20,
+      "element": "Pluto",
+      "keywords": {
+        "upright": [
+          "rebirth",
+          "inner calling",
+          "absolution"
+        ],
+        "upright_cn": [
+          "重生",
+          "内心召唤",
+          "赦免"
+        ],
+        "reversed": [
+          "self-doubt",
+          "refusal to learn"
+        ],
+        "reversed_cn": [
+          "自我怀疑",
+          "拒绝成长"
+        ]
+      },
+      "meanings": {
+        "upright": "Rebirth, inner calling, absolution, awakening.",
+        "upright_cn": "重生，内心的召唤，赦免，觉醒。",
+        "reversed": "Self-doubt, refusing to learn from lessons.",
+        "reversed_cn": "自我怀疑，拒绝从教训中学习。"
+      },
+      "topic_meanings": {
+        "love": {
+          "upright_cn": "感情中迎来一次觉醒，你将更清楚地知道什么才是真正重要的。",
+          "reversed_cn": "逆位时你可能不愿面对感情中的真相。"
+        },
+        "career": {
+          "upright_cn": "事业上的觉醒时刻到来，你将找到真正的使命。",
+          "reversed_cn": "逆位时你可能拒绝接受事业中需要改变的事实。"
+        },
+        "destiny": {
+          "upright_cn": "正缘的觉醒时刻，你将意识到谁才是命中注定的人。",
+          "reversed_cn": "逆位时你可能因为自我怀疑而犹豫不决。"
+        },
+        "family": {
+          "upright_cn": "家庭关系中的觉醒，过去的恩怨将得到化解。",
+          "reversed_cn": "逆位时你可能不愿原谅或释怀过去的家庭伤痛。"
+        },
+        "general": {
+          "upright_cn": "整体运势处于觉醒和重生的关键时刻。",
+          "reversed_cn": "逆位时提醒你面对内心的声音，不要再逃避。"
+        }
+      }
+    },
+    {
+      "card_id": 21,
+      "name_en": "The World",
+      "name_cn": "世界",
+      "arcana": "Major",
+      "suit": null,
+      "number": 21,
+      "element": "Saturn",
+      "keywords": {
+        "upright": [
+          "completion",
+          "achievement",
+          "travel"
+        ],
+        "upright_cn": [
+          "完成",
+          "成就",
+          "旅行"
+        ],
+        "reversed": [
+          "incompletion",
+          "shortcuts"
+        ],
+        "reversed_cn": [
+          "未完成",
+          "走捷径"
+        ]
+      },
+      "meanings": {
+        "upright": "Completion, achievement, wholeness, accomplishment.",
+        "upright_cn": "圆满，成就，完整，达成。",
+        "reversed": "Incompletion, seeking shortcuts, lack of closure.",
+        "reversed_cn": "未完成，走捷径，缺乏了结。"
+      },
+      "topic_meanings": {
+        "love": {
+          "upright_cn": "感情达到了圆满的状态，一段完美的爱情故事正在书写。",
+          "reversed_cn": "逆位时感情可能还有未解决的问题需要处理。"
+        },
+        "career": {
+          "upright_cn": "事业上的重要目标即将达成，付出终获回报。",
+          "reversed_cn": "逆位时提醒你不要急于求成，走完最后一步。"
+        },
+        "destiny": {
+          "upright_cn": "正缘圆满！你与命中注定的那个人将修成正果。",
+          "reversed_cn": "逆位时你可能还有成长的空间才能迎接正缘。"
+        },
+        "family": {
+          "upright_cn": "家庭关系圆满和谐，是最幸福的状态。",
+          "reversed_cn": "逆位时家庭中可能还有一些未解决的心结。"
+        },
+        "general": {
+          "upright_cn": "整体运势圆满，一个重要的人生周期即将完美收官。",
+          "reversed_cn": "逆位时提醒你补完未完成的事情，才能开启新篇章。"
+        }
+      }
+    },
+    {
+      "card_id": 22,
+      "name_en": "Ace of Wands",
+      "name_cn": "权杖首牌",
+      "arcana": "Minor",
+      "suit": "Wands",
+      "number": 1,
+      "element": "Fire",
+      "keywords": {
+        "upright": [
+          "new beginnings",
+          "opportunity",
+          "potential"
+        ],
+        "upright_cn": [
+          "新的开始",
+          "机遇",
+          "潜力"
+        ],
+        "reversed": [
+          "missed opportunity",
+          "false start"
+        ],
+        "reversed_cn": [
+          "错失良机",
+          "不顺利的开始"
+        ]
+      },
+      "meanings": {
+        "upright_cn": "一个全新的开始，充满了潜力和机遇。",
+        "reversed_cn": "机会可能被错过，或者开端不够顺利。"
+      },
+      "topic_meanings": {
+        "love": {
+          "upright_cn": "新的激情火花点燃了你的感情生活。",
+          "reversed_cn": "逆位时需要反思激情与主动中的不足。"
+        },
+        "career": {
+          "upright_cn": "充满创意的新项目即将启动。",
+          "reversed_cn": "逆位时事业冲劲可能遇到阻碍。"
+        },
+        "destiny": {
+          "upright_cn": "一段充满激情的正缘即将开始。",
+          "reversed_cn": "逆位时热烈的缘分可能暂时受阻。"
+        },
+        "family": {
+          "upright_cn": "家庭中迎来新的活力。",
+          "reversed_cn": "逆位时家庭活力需要更多关注。"
+        },
+        "general": {
+          "upright_cn": "新的灵感和激情正在涌现。",
+          "reversed_cn": "逆位时行动与创造方面需要注意。"
+        }
+      }
+    },
+    {
+      "card_id": 23,
+      "name_en": "Two of Wands",
+      "name_cn": "权杖二",
+      "arcana": "Minor",
+      "suit": "Wands",
+      "number": 2,
+      "element": "Fire",
+      "keywords": {
+        "upright": [
+          "balance",
+          "decisions",
+          "duality"
+        ],
+        "upright_cn": [
+          "平衡",
+          "抉择",
+          "二元性"
+        ],
+        "reversed": [
+          "imbalance",
+          "indecision"
+        ],
+        "reversed_cn": [
+          "失衡",
+          "犹豫不决"
+        ]
+      },
+      "meanings": {
+        "upright_cn": "面临选择和平衡的考验，需要在两个方向间做出决定。",
+        "reversed_cn": "失衡或犹豫不决，难以做出选择。"
+      },
+      "topic_meanings": {
+        "love": {
+          "upright_cn": "感情中需要做出选择，两种可能性都令人期待。",
+          "reversed_cn": "逆位时需要反思激情与主动中的不足。"
+        },
+        "career": {
+          "upright_cn": "正在规划更大的事业蓝图。",
+          "reversed_cn": "逆位时事业冲劲可能遇到阻碍。"
+        },
+        "destiny": {
+          "upright_cn": "追寻正缘需要你做出勇敢的决定。",
+          "reversed_cn": "逆位时热烈的缘分可能暂时受阻。"
+        },
+        "family": {
+          "upright_cn": "家庭中面临重要的选择。",
+          "reversed_cn": "逆位时家庭活力需要更多关注。"
+        },
+        "general": {
+          "upright_cn": "远见和规划将带来回报。",
+          "reversed_cn": "逆位时行动与创造方面需要注意。"
+        }
+      }
+    },
+    {
+      "card_id": 24,
+      "name_en": "Three of Wands",
+      "name_cn": "权杖三",
+      "arcana": "Minor",
+      "suit": "Wands",
+      "number": 3,
+      "element": "Fire",
+      "keywords": {
+        "upright": [
+          "growth",
+          "expansion",
+          "collaboration"
+        ],
+        "upright_cn": [
+          "成长",
+          "扩展",
+          "合作"
+        ],
+        "reversed": [
+          "delays",
+          "lack of growth"
+        ],
+        "reversed_cn": [
+          "延迟",
+          "成长受阻"
+        ]
+      },
+      "meanings": {
+        "upright_cn": "成长和扩张的时期，合作带来进展。",
+        "reversed_cn": "成长受阻，合作可能出现问题。"
+      },
+      "topic_meanings": {
+        "love": {
+          "upright_cn": "感情稳步发展，前景光明。",
+          "reversed_cn": "逆位时需要反思激情与主动中的不足。"
+        },
+        "career": {
+          "upright_cn": "事业蒸蒸日上，之前的规划开始见效。",
+          "reversed_cn": "逆位时事业冲劲可能遇到阻碍。"
+        },
+        "destiny": {
+          "upright_cn": "正缘正在按命运的节奏向你走来。",
+          "reversed_cn": "逆位时热烈的缘分可能暂时受阻。"
+        },
+        "family": {
+          "upright_cn": "家庭事务进展顺利。",
+          "reversed_cn": "逆位时家庭活力需要更多关注。"
+        },
+        "general": {
+          "upright_cn": "远见和努力正在获得回报。",
+          "reversed_cn": "逆位时行动与创造方面需要注意。"
+        }
+      }
+    },
+    {
+      "card_id": 25,
+      "name_en": "Four of Wands",
+      "name_cn": "权杖四",
+      "arcana": "Minor",
+      "suit": "Wands",
+      "number": 4,
+      "element": "Fire",
+      "keywords": {
+        "upright": [
+          "stability",
+          "structure",
+          "security"
+        ],
+        "upright_cn": [
+          "稳定",
+          "结构",
+          "安全"
+        ],
+        "reversed": [
+          "instability",
+          "lack of security"
+        ],
+        "reversed_cn": [
+          "不稳定",
+          "缺乏安全感"
+        ]
+      },
+      "meanings": {
+        "upright_cn": "稳定和安全的局面，结构化的进展。",
+        "reversed_cn": "稳定受到威胁，可能感到不安全。"
+      },
+      "topic_meanings": {
+        "love": {
+          "upright_cn": "感情中值得庆祝的时刻，关系和谐稳定。",
+          "reversed_cn": "逆位时需要反思激情与主动中的不足。"
+        },
+        "career": {
+          "upright_cn": "团队合作的成果值得庆祝。",
+          "reversed_cn": "逆位时事业冲劲可能遇到阻碍。"
+        },
+        "destiny": {
+          "upright_cn": "正缘即将修成正果。",
+          "reversed_cn": "逆位时热烈的缘分可能暂时受阻。"
+        },
+        "family": {
+          "upright_cn": "家庭团聚的喜悦。",
+          "reversed_cn": "逆位时家庭活力需要更多关注。"
+        },
+        "general": {
+          "upright_cn": "收获和庆祝的时期。",
+          "reversed_cn": "逆位时行动与创造方面需要注意。"
+        }
+      }
+    },
+    {
+      "card_id": 26,
+      "name_en": "Five of Wands",
+      "name_cn": "权杖五",
+      "arcana": "Minor",
+      "suit": "Wands",
+      "number": 5,
+      "element": "Fire",
+      "keywords": {
+        "upright": [
+          "conflict",
+          "loss",
+          "challenge"
+        ],
+        "upright_cn": [
+          "冲突",
+          "失去",
+          "挑战"
+        ],
+        "reversed": [
+          "recovery",
+          "moving on"
+        ],
+        "reversed_cn": [
+          "恢复",
+          "向前看"
+        ]
+      },
+      "meanings": {
+        "upright_cn": "面临冲突或挑战，可能经历一些损失。",
+        "reversed_cn": "从困境中恢复，开始向前看。"
+      },
+      "topic_meanings": {
+        "love": {
+          "upright_cn": "感情中存在分歧，但磨合是成长的一部分。",
+          "reversed_cn": "逆位时需要反思激情与主动中的不足。"
+        },
+        "career": {
+          "upright_cn": "职场竞争激烈，但能激发你的潜能。",
+          "reversed_cn": "逆位时事业冲劲可能遇到阻碍。"
+        },
+        "destiny": {
+          "upright_cn": "正缘前需要经历一些考验。",
+          "reversed_cn": "逆位时热烈的缘分可能暂时受阻。"
+        },
+        "family": {
+          "upright_cn": "家庭成员间意见不一。",
+          "reversed_cn": "逆位时家庭活力需要更多关注。"
+        },
+        "general": {
+          "upright_cn": "竞争和挑战让你更强大。",
+          "reversed_cn": "逆位时行动与创造方面需要注意。"
+        }
+      }
+    },
+    {
+      "card_id": 27,
+      "name_en": "Six of Wands",
+      "name_cn": "权杖六",
+      "arcana": "Minor",
+      "suit": "Wands",
+      "number": 6,
+      "element": "Fire",
+      "keywords": {
+        "upright": [
+          "harmony",
+          "generosity",
+          "gratitude"
+        ],
+        "upright_cn": [
+          "和谐",
+          "慷慨",
+          "感恩"
+        ],
+        "reversed": [
+          "selfishness",
+          "ingratitude"
+        ],
+        "reversed_cn": [
+          "自私",
+          "不知感恩"
+        ]
+      },
+      "meanings": {
+        "upright_cn": "和谐与慷慨，充满感恩的时刻。",
+        "reversed_cn": "可能忽略了感恩，或过于计较得失。"
+      },
+      "topic_meanings": {
+        "love": {
+          "upright_cn": "感情中获得胜利，你们的爱情受到祝福。",
+          "reversed_cn": "逆位时需要反思激情与主动中的不足。"
+        },
+        "career": {
+          "upright_cn": "事业成就获得广泛认可。",
+          "reversed_cn": "逆位时事业冲劲可能遇到阻碍。"
+        },
+        "destiny": {
+          "upright_cn": "正缘是对你成长的奖赏。",
+          "reversed_cn": "逆位时热烈的缘分可能暂时受阻。"
+        },
+        "family": {
+          "upright_cn": "家庭取得共同的成就。",
+          "reversed_cn": "逆位时家庭活力需要更多关注。"
+        },
+        "general": {
+          "upright_cn": "大获全胜，努力得到回报。",
+          "reversed_cn": "逆位时行动与创造方面需要注意。"
+        }
+      }
+    },
+    {
+      "card_id": 28,
+      "name_en": "Seven of Wands",
+      "name_cn": "权杖七",
+      "arcana": "Minor",
+      "suit": "Wands",
+      "number": 7,
+      "element": "Fire",
+      "keywords": {
+        "upright": [
+          "reflection",
+          "assessment",
+          "patience"
+        ],
+        "upright_cn": [
+          "反思",
+          "评估",
+          "耐心"
+        ],
+        "reversed": [
+          "impulsiveness",
+          "lack of reflection"
+        ],
+        "reversed_cn": [
+          "冲动",
+          "缺乏反思"
+        ]
+      },
+      "meanings": {
+        "upright_cn": "需要耐心和反思，评估当前的状况。",
+        "reversed_cn": "过于急躁，缺乏必要的反思。"
+      },
+      "topic_meanings": {
+        "love": {
+          "upright_cn": "坚持自己的爱情信念，不要轻易妥协。",
+          "reversed_cn": "逆位时需要反思激情与主动中的不足。"
+        },
+        "career": {
+          "upright_cn": "面对挑战时需要坚定立场。",
+          "reversed_cn": "逆位时事业冲劲可能遇到阻碍。"
+        },
+        "destiny": {
+          "upright_cn": "坚持等待正缘，不要将就。",
+          "reversed_cn": "逆位时热烈的缘分可能暂时受阻。"
+        },
+        "family": {
+          "upright_cn": "在家庭中坚守自己的原则。",
+          "reversed_cn": "逆位时家庭活力需要更多关注。"
+        },
+        "general": {
+          "upright_cn": "充满挑战但坚持就是胜利。",
+          "reversed_cn": "逆位时行动与创造方面需要注意。"
+        }
+      }
+    },
+    {
+      "card_id": 29,
+      "name_en": "Eight of Wands",
+      "name_cn": "权杖八",
+      "arcana": "Minor",
+      "suit": "Wands",
+      "number": 8,
+      "element": "Fire",
+      "keywords": {
+        "upright": [
+          "mastery",
+          "skill",
+          "diligence"
+        ],
+        "upright_cn": [
+          "精进",
+          "技艺",
+          "勤奋"
+        ],
+        "reversed": [
+          "lack of focus",
+          "perfectionism"
+        ],
+        "reversed_cn": [
+          "缺乏专注",
+          "完美主义"
+        ]
+      },
+      "meanings": {
+        "upright_cn": "通过勤奋和专注达到精进，技艺日益成熟。",
+        "reversed_cn": "可能过于追求完美或缺乏专注。"
+      },
+      "topic_meanings": {
+        "love": {
+          "upright_cn": "感情发展迅速，充满惊喜。",
+          "reversed_cn": "逆位时需要反思激情与主动中的不足。"
+        },
+        "career": {
+          "upright_cn": "事情飞速推进，抓住机遇。",
+          "reversed_cn": "逆位时事业冲劲可能遇到阻碍。"
+        },
+        "destiny": {
+          "upright_cn": "正缘来得很快，超出预期。",
+          "reversed_cn": "逆位时热烈的缘分可能暂时受阻。"
+        },
+        "family": {
+          "upright_cn": "家庭事务快速推进。",
+          "reversed_cn": "逆位时家庭活力需要更多关注。"
+        },
+        "general": {
+          "upright_cn": "快速发展，充满动感。",
+          "reversed_cn": "逆位时行动与创造方面需要注意。"
+        }
+      }
+    },
+    {
+      "card_id": 30,
+      "name_en": "Nine of Wands",
+      "name_cn": "权杖九",
+      "arcana": "Minor",
+      "suit": "Wands",
+      "number": 9,
+      "element": "Fire",
+      "keywords": {
+        "upright": [
+          "abundance",
+          "luxury",
+          "gratitude"
+        ],
+        "upright_cn": [
+          "丰盛",
+          "奢华",
+          "感恩"
+        ],
+        "reversed": [
+          "greed",
+          "dissatisfaction"
+        ],
+        "reversed_cn": [
+          "贪婪",
+          "不满足"
+        ]
+      },
+      "meanings": {
+        "upright_cn": "丰盛和满足，享受劳动的成果。",
+        "reversed_cn": "可能过于贪心或不满足现状。"
+      },
+      "topic_meanings": {
+        "love": {
+          "upright_cn": "经历了一些感情考验，但你依然坚守。",
+          "reversed_cn": "逆位时需要反思激情与主动中的不足。"
+        },
+        "career": {
+          "upright_cn": "坚持即将迎来回报。",
+          "reversed_cn": "逆位时事业冲劲可能遇到阻碍。"
+        },
+        "destiny": {
+          "upright_cn": "正缘就在不远处，再坚持一下。",
+          "reversed_cn": "逆位时热烈的缘分可能暂时受阻。"
+        },
+        "family": {
+          "upright_cn": "家庭中的坚持将带来转机。",
+          "reversed_cn": "逆位时家庭活力需要更多关注。"
+        },
+        "general": {
+          "upright_cn": "韧性十足，胜利在望。",
+          "reversed_cn": "逆位时行动与创造方面需要注意。"
+        }
+      }
+    },
+    {
+      "card_id": 31,
+      "name_en": "Ten of Wands",
+      "name_cn": "权杖十",
+      "arcana": "Minor",
+      "suit": "Wands",
+      "number": 10,
+      "element": "Fire",
+      "keywords": {
+        "upright": [
+          "completion",
+          "burden",
+          "responsibility"
+        ],
+        "upright_cn": [
+          "完成",
+          "重担",
+          "责任"
+        ],
+        "reversed": [
+          "release",
+          "delegation"
+        ],
+        "reversed_cn": [
+          "释放",
+          "分摊"
+        ]
+      },
+      "meanings": {
+        "upright_cn": "一个周期的完成，但也带来了沉重的责任。",
+        "reversed_cn": "开始释放重担，学会分摊责任。"
+      },
+      "topic_meanings": {
+        "love": {
+          "upright_cn": "感情中承担了太多，需要学会分担。",
+          "reversed_cn": "逆位时需要反思激情与主动中的不足。"
+        },
+        "career": {
+          "upright_cn": "事业负担重，但终点在望。",
+          "reversed_cn": "逆位时事业冲劲可能遇到阻碍。"
+        },
+        "destiny": {
+          "upright_cn": "放下不必要的感情包袱才能迎接正缘。",
+          "reversed_cn": "逆位时热烈的缘分可能暂时受阻。"
+        },
+        "family": {
+          "upright_cn": "家庭责任重大，需要寻求帮助。",
+          "reversed_cn": "逆位时家庭活力需要更多关注。"
+        },
+        "general": {
+          "upright_cn": "负担较重，坚持即可到达终点。",
+          "reversed_cn": "逆位时行动与创造方面需要注意。"
+        }
+      }
+    },
+    {
+      "card_id": 32,
+      "name_en": "Page of Wands",
+      "name_cn": "权杖侍从",
+      "arcana": "Minor",
+      "suit": "Wands",
+      "number": 11,
+      "element": "Fire",
+      "keywords": {
+        "upright": [
+          "curiosity",
+          "exploration",
+          "learning"
+        ],
+        "upright_cn": [
+          "好奇",
+          "探索",
+          "学习"
+        ],
+        "reversed": [
+          "lack of focus",
+          "immaturity"
+        ],
+        "reversed_cn": [
+          "缺乏专注",
+          "不成熟"
+        ]
+      },
+      "meanings": {
+        "upright_cn": "充满好奇心和探索精神，新的学习旅程。",
+        "reversed_cn": "注意力不集中或行为不够成熟。"
+      },
+      "topic_meanings": {
+        "love": {
+          "upright_cn": "感情中充满新鲜感和探索欲。",
+          "reversed_cn": "逆位时需要反思激情与主动中的不足。"
+        },
+        "career": {
+          "upright_cn": "迎来令人兴奋的新机会。",
+          "reversed_cn": "逆位时事业冲劲可能遇到阻碍。"
+        },
+        "destiny": {
+          "upright_cn": "正缘以充满惊喜的方式出现。",
+          "reversed_cn": "逆位时热烈的缘分可能暂时受阻。"
+        },
+        "family": {
+          "upright_cn": "家庭中传来令人兴奋的消息。",
+          "reversed_cn": "逆位时家庭活力需要更多关注。"
+        },
+        "general": {
+          "upright_cn": "充满活力和探索精神。",
+          "reversed_cn": "逆位时行动与创造方面需要注意。"
+        }
+      }
+    },
+    {
+      "card_id": 33,
+      "name_en": "Knight of Wands",
+      "name_cn": "权杖骑士",
+      "arcana": "Minor",
+      "suit": "Wands",
+      "number": 12,
+      "element": "Fire",
+      "keywords": {
+        "upright": [
+          "action",
+          "drive",
+          "ambition"
+        ],
+        "upright_cn": [
+          "行动",
+          "驱动力",
+          "抱负"
+        ],
+        "reversed": [
+          "recklessness",
+          "restlessness"
+        ],
+        "reversed_cn": [
+          "鲁莽",
+          "不安分"
+        ]
+      },
+      "meanings": {
+        "upright_cn": "充满行动力和抱负，勇往直前。",
+        "reversed_cn": "可能过于鲁莽或急躁。"
+      },
+      "topic_meanings": {
+        "love": {
+          "upright_cn": "充满激情的追求，对方魅力四射。",
+          "reversed_cn": "逆位时需要反思激情与主动中的不足。"
+        },
+        "career": {
+          "upright_cn": "干劲十足，是冲刺的好时机。",
+          "reversed_cn": "逆位时事业冲劲可能遇到阻碍。"
+        },
+        "destiny": {
+          "upright_cn": "正缘如火焰般热烈地靠近。",
+          "reversed_cn": "逆位时热烈的缘分可能暂时受阻。"
+        },
+        "family": {
+          "upright_cn": "家庭中充满活力。",
+          "reversed_cn": "逆位时家庭活力需要更多关注。"
+        },
+        "general": {
+          "upright_cn": "充满激情和行动力。",
+          "reversed_cn": "逆位时行动与创造方面需要注意。"
+        }
+      }
+    },
+    {
+      "card_id": 34,
+      "name_en": "Queen of Wands",
+      "name_cn": "权杖王后",
+      "arcana": "Minor",
+      "suit": "Wands",
+      "number": 13,
+      "element": "Fire",
+      "keywords": {
+        "upright": [
+          "nurturing",
+          "compassion",
+          "practicality"
+        ],
+        "upright_cn": [
+          "滋养",
+          "同情",
+          "务实"
+        ],
+        "reversed": [
+          "insecurity",
+          "neediness"
+        ],
+        "reversed_cn": [
+          "不安全感",
+          "依赖"
+        ]
+      },
+      "meanings": {
+        "upright_cn": "温暖而务实的力量，滋养周围的人。",
+        "reversed_cn": "可能过于依赖他人或缺乏安全感。"
+      },
+      "topic_meanings": {
+        "love": {
+          "upright_cn": "自信的魅力吸引着爱情的到来。",
+          "reversed_cn": "逆位时需要反思激情与主动中的不足。"
+        },
+        "career": {
+          "upright_cn": "自信和领导力让你脱颖而出。",
+          "reversed_cn": "逆位时事业冲劲可能遇到阻碍。"
+        },
+        "destiny": {
+          "upright_cn": "正缘会被你的自信所吸引。",
+          "reversed_cn": "逆位时热烈的缘分可能暂时受阻。"
+        },
+        "family": {
+          "upright_cn": "你是家庭中温暖而自信的存在。",
+          "reversed_cn": "逆位时家庭活力需要更多关注。"
+        },
+        "general": {
+          "upright_cn": "自信阳光，魅力无法阻挡。",
+          "reversed_cn": "逆位时行动与创造方面需要注意。"
+        }
+      }
+    },
+    {
+      "card_id": 35,
+      "name_en": "King of Wands",
+      "name_cn": "权杖国王",
+      "arcana": "Minor",
+      "suit": "Wands",
+      "number": 14,
+      "element": "Fire",
+      "keywords": {
+        "upright": [
+          "authority",
+          "structure",
+          "discipline"
+        ],
+        "upright_cn": [
+          "权威",
+          "结构",
+          "纪律"
+        ],
+        "reversed": [
+          "tyranny",
+          "rigidity"
+        ],
+        "reversed_cn": [
+          "专制",
+          "固执"
+        ]
+      },
+      "meanings": {
+        "upright_cn": "成熟的权威和领导力，建立稳固的结构。",
+        "reversed_cn": "可能过于专制或固执己见。"
+      },
+      "topic_meanings": {
+        "love": {
+          "upright_cn": "遇到有担当和魅力的对象。",
+          "reversed_cn": "逆位时需要反思激情与主动中的不足。"
+        },
+        "career": {
+          "upright_cn": "领导地位稳固，远见卓识。",
+          "reversed_cn": "逆位时事业冲劲可能遇到阻碍。"
+        },
+        "destiny": {
+          "upright_cn": "正缘是一位有担当的人。",
+          "reversed_cn": "逆位时热烈的缘分可能暂时受阻。"
+        },
+        "family": {
+          "upright_cn": "家庭中的核心人物。",
+          "reversed_cn": "逆位时家庭活力需要更多关注。"
+        },
+        "general": {
+          "upright_cn": "领导力和远见掌控全局。",
+          "reversed_cn": "逆位时行动与创造方面需要注意。"
+        }
+      }
+    },
+    {
+      "card_id": 36,
+      "name_en": "Ace of Cups",
+      "name_cn": "圣杯首牌",
+      "arcana": "Minor",
+      "suit": "Cups",
+      "number": 1,
+      "element": "Water",
+      "keywords": {
+        "upright": [
+          "new beginnings",
+          "opportunity",
+          "potential"
+        ],
+        "upright_cn": [
+          "新的开始",
+          "机遇",
+          "潜力"
+        ],
+        "reversed": [
+          "missed opportunity",
+          "false start"
+        ],
+        "reversed_cn": [
+          "错失良机",
+          "不顺利的开始"
+        ]
+      },
+      "meanings": {
+        "upright_cn": "一个全新的开始，充满了潜力和机遇。",
+        "reversed_cn": "机会可能被错过，或者开端不够顺利。"
+      },
+      "topic_meanings": {
+        "love": {
+          "upright_cn": "一段新的感情正在萌芽，充满了爱的可能性。",
+          "reversed_cn": "逆位时需要反思情感的流动中的不足。"
+        },
+        "career": {
+          "upright_cn": "对工作产生了新的热情和满足感。",
+          "reversed_cn": "逆位时职业满足感可能遇到阻碍。"
+        },
+        "destiny": {
+          "upright_cn": "命中注定的爱正从心底涌起。",
+          "reversed_cn": "逆位时心灵契合的缘分可能暂时受阻。"
+        },
+        "family": {
+          "upright_cn": "家庭中涌现新的温情。",
+          "reversed_cn": "逆位时家庭情感需要更多关注。"
+        },
+        "general": {
+          "upright_cn": "情感的新起点，内心充满爱。",
+          "reversed_cn": "逆位时情感与直觉方面需要注意。"
+        }
+      }
+    },
+    {
+      "card_id": 37,
+      "name_en": "Two of Cups",
+      "name_cn": "圣杯二",
+      "arcana": "Minor",
+      "suit": "Cups",
+      "number": 2,
+      "element": "Water",
+      "keywords": {
+        "upright": [
+          "balance",
+          "decisions",
+          "duality"
+        ],
+        "upright_cn": [
+          "平衡",
+          "抉择",
+          "二元性"
+        ],
+        "reversed": [
+          "imbalance",
+          "indecision"
+        ],
+        "reversed_cn": [
+          "失衡",
+          "犹豫不决"
+        ]
+      },
+      "meanings": {
+        "upright_cn": "面临选择和平衡的考验，需要在两个方向间做出决定。",
+        "reversed_cn": "失衡或犹豫不决，难以做出选择。"
+      },
+      "topic_meanings": {
+        "love": {
+          "upright_cn": "两人心意相通，感情甜蜜和谐。",
+          "reversed_cn": "逆位时需要反思情感的流动中的不足。"
+        },
+        "career": {
+          "upright_cn": "工作伙伴间的默契配合。",
+          "reversed_cn": "逆位时职业满足感可能遇到阻碍。"
+        },
+        "destiny": {
+          "upright_cn": "你与正缘心有灵犀。",
+          "reversed_cn": "逆位时心灵契合的缘分可能暂时受阻。"
+        },
+        "family": {
+          "upright_cn": "家人之间感情融洽。",
+          "reversed_cn": "逆位时家庭情感需要更多关注。"
+        },
+        "general": {
+          "upright_cn": "关系和谐，心意相通。",
+          "reversed_cn": "逆位时情感与直觉方面需要注意。"
+        }
+      }
+    },
+    {
+      "card_id": 38,
+      "name_en": "Three of Cups",
+      "name_cn": "圣杯三",
+      "arcana": "Minor",
+      "suit": "Cups",
+      "number": 3,
+      "element": "Water",
+      "keywords": {
+        "upright": [
+          "growth",
+          "expansion",
+          "collaboration"
+        ],
+        "upright_cn": [
+          "成长",
+          "扩展",
+          "合作"
+        ],
+        "reversed": [
+          "delays",
+          "lack of growth"
+        ],
+        "reversed_cn": [
+          "延迟",
+          "成长受阻"
+        ]
+      },
+      "meanings": {
+        "upright_cn": "成长和扩张的时期，合作带来进展。",
+        "reversed_cn": "成长受阻，合作可能出现问题。"
+      },
+      "topic_meanings": {
+        "love": {
+          "upright_cn": "社交中可能遇到心仪的对象，朋友们会助力。",
+          "reversed_cn": "逆位时需要反思情感的流动中的不足。"
+        },
+        "career": {
+          "upright_cn": "团队合作愉快，工作氛围轻松。",
+          "reversed_cn": "逆位时职业满足感可能遇到阻碍。"
+        },
+        "destiny": {
+          "upright_cn": "正缘可能通过朋友圈出现。",
+          "reversed_cn": "逆位时心灵契合的缘分可能暂时受阻。"
+        },
+        "family": {
+          "upright_cn": "家庭聚会增进感情。",
+          "reversed_cn": "逆位时家庭情感需要更多关注。"
+        },
+        "general": {
+          "upright_cn": "社交活跃，友谊愉快。",
+          "reversed_cn": "逆位时情感与直觉方面需要注意。"
+        }
+      }
+    },
+    {
+      "card_id": 39,
+      "name_en": "Four of Cups",
+      "name_cn": "圣杯四",
+      "arcana": "Minor",
+      "suit": "Cups",
+      "number": 4,
+      "element": "Water",
+      "keywords": {
+        "upright": [
+          "stability",
+          "structure",
+          "security"
+        ],
+        "upright_cn": [
+          "稳定",
+          "结构",
+          "安全"
+        ],
+        "reversed": [
+          "instability",
+          "lack of security"
+        ],
+        "reversed_cn": [
+          "不稳定",
+          "缺乏安全感"
+        ]
+      },
+      "meanings": {
+        "upright_cn": "稳定和安全的局面，结构化的进展。",
+        "reversed_cn": "稳定受到威胁，可能感到不安全。"
+      },
+      "topic_meanings": {
+        "love": {
+          "upright_cn": "对现有感情感到倦怠，需要重新发现美好。",
+          "reversed_cn": "逆位时需要反思情感的流动中的不足。"
+        },
+        "career": {
+          "upright_cn": "对工作缺乏热情，需要寻找新的动力。",
+          "reversed_cn": "逆位时职业满足感可能遇到阻碍。"
+        },
+        "destiny": {
+          "upright_cn": "不要忽视身边的缘分。",
+          "reversed_cn": "逆位时心灵契合的缘分可能暂时受阻。"
+        },
+        "family": {
+          "upright_cn": "可能忽视了家人的付出。",
+          "reversed_cn": "逆位时家庭情感需要更多关注。"
+        },
+        "general": {
+          "upright_cn": "需要重新审视和感恩已有的美好。",
+          "reversed_cn": "逆位时情感与直觉方面需要注意。"
+        }
+      }
+    },
+    {
+      "card_id": 40,
+      "name_en": "Five of Cups",
+      "name_cn": "圣杯五",
+      "arcana": "Minor",
+      "suit": "Cups",
+      "number": 5,
+      "element": "Water",
+      "keywords": {
+        "upright": [
+          "conflict",
+          "loss",
+          "challenge"
+        ],
+        "upright_cn": [
+          "冲突",
+          "失去",
+          "挑战"
+        ],
+        "reversed": [
+          "recovery",
+          "moving on"
+        ],
+        "reversed_cn": [
+          "恢复",
+          "向前看"
+        ]
+      },
+      "meanings": {
+        "upright_cn": "面临冲突或挑战，可能经历一些损失。",
+        "reversed_cn": "从困境中恢复，开始向前看。"
+      },
+      "topic_meanings": {
+        "love": {
+          "upright_cn": "感情中的失落和遗憾，允许自己悲伤。",
+          "reversed_cn": "逆位时需要反思情感的流动中的不足。"
+        },
+        "career": {
+          "upright_cn": "工作中的挫折让你感到沮丧。",
+          "reversed_cn": "逆位时职业满足感可能遇到阻碍。"
+        },
+        "destiny": {
+          "upright_cn": "正缘之前可能需要释怀过去的伤痛。",
+          "reversed_cn": "逆位时心灵契合的缘分可能暂时受阻。"
+        },
+        "family": {
+          "upright_cn": "家庭中有些未化解的伤感。",
+          "reversed_cn": "逆位时家庭情感需要更多关注。"
+        },
+        "general": {
+          "upright_cn": "允许自己感受悲伤，然后向前看。",
+          "reversed_cn": "逆位时情感与直觉方面需要注意。"
+        }
+      }
+    },
+    {
+      "card_id": 41,
+      "name_en": "Six of Cups",
+      "name_cn": "圣杯六",
+      "arcana": "Minor",
+      "suit": "Cups",
+      "number": 6,
+      "element": "Water",
+      "keywords": {
+        "upright": [
+          "harmony",
+          "generosity",
+          "gratitude"
+        ],
+        "upright_cn": [
+          "和谐",
+          "慷慨",
+          "感恩"
+        ],
+        "reversed": [
+          "selfishness",
+          "ingratitude"
+        ],
+        "reversed_cn": [
+          "自私",
+          "不知感恩"
+        ]
+      },
+      "meanings": {
+        "upright_cn": "和谐与慷慨，充满感恩的时刻。",
+        "reversed_cn": "可能忽略了感恩，或过于计较得失。"
+      },
+      "topic_meanings": {
+        "love": {
+          "upright_cn": "回忆过去的美好感情，或与旧人重逢。",
+          "reversed_cn": "逆位时需要反思情感的流动中的不足。"
+        },
+        "career": {
+          "upright_cn": "工作中回归初心，找回热情。",
+          "reversed_cn": "逆位时职业满足感可能遇到阻碍。"
+        },
+        "destiny": {
+          "upright_cn": "正缘可能与过去有某种连接。",
+          "reversed_cn": "逆位时心灵契合的缘分可能暂时受阻。"
+        },
+        "family": {
+          "upright_cn": "家庭中充满温馨的回忆。",
+          "reversed_cn": "逆位时家庭情感需要更多关注。"
+        },
+        "general": {
+          "upright_cn": "怀旧的情绪，珍贵的回忆。",
+          "reversed_cn": "逆位时情感与直觉方面需要注意。"
+        }
+      }
+    },
+    {
+      "card_id": 42,
+      "name_en": "Seven of Cups",
+      "name_cn": "圣杯七",
+      "arcana": "Minor",
+      "suit": "Cups",
+      "number": 7,
+      "element": "Water",
+      "keywords": {
+        "upright": [
+          "reflection",
+          "assessment",
+          "patience"
+        ],
+        "upright_cn": [
+          "反思",
+          "评估",
+          "耐心"
+        ],
+        "reversed": [
+          "impulsiveness",
+          "lack of reflection"
+        ],
+        "reversed_cn": [
+          "冲动",
+          "缺乏反思"
+        ]
+      },
+      "meanings": {
+        "upright_cn": "需要耐心和反思，评估当前的状况。",
+        "reversed_cn": "过于急躁，缺乏必要的反思。"
+      },
+      "topic_meanings": {
+        "love": {
+          "upright_cn": "感情中的选择让人迷惑，需要看清真实的感受。",
+          "reversed_cn": "逆位时需要反思情感的流动中的不足。"
+        },
+        "career": {
+          "upright_cn": "面对多种选择，需要辨别真正适合自己的。",
+          "reversed_cn": "逆位时职业满足感可能遇到阻碍。"
+        },
+        "destiny": {
+          "upright_cn": "不要被感情的幻象迷惑，正缘需要真实。",
+          "reversed_cn": "逆位时心灵契合的缘分可能暂时受阻。"
+        },
+        "family": {
+          "upright_cn": "家庭中需要拨开迷雾看清真相。",
+          "reversed_cn": "逆位时家庭情感需要更多关注。"
+        },
+        "general": {
+          "upright_cn": "需要分辨幻象与真实。",
+          "reversed_cn": "逆位时情感与直觉方面需要注意。"
+        }
+      }
+    },
+    {
+      "card_id": 43,
+      "name_en": "Eight of Cups",
+      "name_cn": "圣杯八",
+      "arcana": "Minor",
+      "suit": "Cups",
+      "number": 8,
+      "element": "Water",
+      "keywords": {
+        "upright": [
+          "mastery",
+          "skill",
+          "diligence"
+        ],
+        "upright_cn": [
+          "精进",
+          "技艺",
+          "勤奋"
+        ],
+        "reversed": [
+          "lack of focus",
+          "perfectionism"
+        ],
+        "reversed_cn": [
+          "缺乏专注",
+          "完美主义"
+        ]
+      },
+      "meanings": {
+        "upright_cn": "通过勤奋和专注达到精进，技艺日益成熟。",
+        "reversed_cn": "可能过于追求完美或缺乏专注。"
+      },
+      "topic_meanings": {
+        "love": {
+          "upright_cn": "离开一段不满意的感情，寻找更深的情感满足。",
+          "reversed_cn": "逆位时需要反思情感的流动中的不足。"
+        },
+        "career": {
+          "upright_cn": "放弃不合适的工作方向，追求真正的使命。",
+          "reversed_cn": "逆位时职业满足感可能遇到阻碍。"
+        },
+        "destiny": {
+          "upright_cn": "放下不适合的，才能迎接真正的正缘。",
+          "reversed_cn": "逆位时心灵契合的缘分可能暂时受阻。"
+        },
+        "family": {
+          "upright_cn": "可能需要远离家庭的负面影响。",
+          "reversed_cn": "逆位时家庭情感需要更多关注。"
+        },
+        "general": {
+          "upright_cn": "放下执念，追寻更有意义的事物。",
+          "reversed_cn": "逆位时情感与直觉方面需要注意。"
+        }
+      }
+    },
+    {
+      "card_id": 44,
+      "name_en": "Nine of Cups",
+      "name_cn": "圣杯九",
+      "arcana": "Minor",
+      "suit": "Cups",
+      "number": 9,
+      "element": "Water",
+      "keywords": {
+        "upright": [
+          "abundance",
+          "luxury",
+          "gratitude"
+        ],
+        "upright_cn": [
+          "丰盛",
+          "奢华",
+          "感恩"
+        ],
+        "reversed": [
+          "greed",
+          "dissatisfaction"
+        ],
+        "reversed_cn": [
+          "贪婪",
+          "不满足"
+        ]
+      },
+      "meanings": {
+        "upright_cn": "丰盛和满足，享受劳动的成果。",
+        "reversed_cn": "可能过于贪心或不满足现状。"
+      },
+      "topic_meanings": {
+        "love": {
+          "upright_cn": "感情中许愿成真，内心的满足感溢于言表。",
+          "reversed_cn": "逆位时需要反思情感的流动中的不足。"
+        },
+        "career": {
+          "upright_cn": "工作获得极大的满足感和成就感。",
+          "reversed_cn": "逆位时职业满足感可能遇到阻碍。"
+        },
+        "destiny": {
+          "upright_cn": "你对正缘的期待即将实现。",
+          "reversed_cn": "逆位时心灵契合的缘分可能暂时受阻。"
+        },
+        "family": {
+          "upright_cn": "家庭生活如你所愿。",
+          "reversed_cn": "逆位时家庭情感需要更多关注。"
+        },
+        "general": {
+          "upright_cn": "心愿达成，幸福满溢。",
+          "reversed_cn": "逆位时情感与直觉方面需要注意。"
+        }
+      }
+    },
+    {
+      "card_id": 45,
+      "name_en": "Ten of Cups",
+      "name_cn": "圣杯十",
+      "arcana": "Minor",
+      "suit": "Cups",
+      "number": 10,
+      "element": "Water",
+      "keywords": {
+        "upright": [
+          "completion",
+          "burden",
+          "responsibility"
+        ],
+        "upright_cn": [
+          "完成",
+          "重担",
+          "责任"
+        ],
+        "reversed": [
+          "release",
+          "delegation"
+        ],
+        "reversed_cn": [
+          "释放",
+          "分摊"
+        ]
+      },
+      "meanings": {
+        "upright_cn": "一个周期的完成，但也带来了沉重的责任。",
+        "reversed_cn": "开始释放重担，学会分摊责任。"
+      },
+      "topic_meanings": {
+        "love": {
+          "upright_cn": "感情圆满幸福，家庭的温馨与爱的丰盈。",
+          "reversed_cn": "逆位时需要反思情感的流动中的不足。"
+        },
+        "career": {
+          "upright_cn": "事业与情感双丰收。",
+          "reversed_cn": "逆位时职业满足感可能遇到阻碍。"
+        },
+        "destiny": {
+          "upright_cn": "正缘带来完整的人生幸福。",
+          "reversed_cn": "逆位时心灵契合的缘分可能暂时受阻。"
+        },
+        "family": {
+          "upright_cn": "家庭美满，幸福圆满。",
+          "reversed_cn": "逆位时家庭情感需要更多关注。"
+        },
+        "general": {
+          "upright_cn": "幸福圆满，万事如意。",
+          "reversed_cn": "逆位时情感与直觉方面需要注意。"
+        }
+      }
+    },
+    {
+      "card_id": 46,
+      "name_en": "Page of Cups",
+      "name_cn": "圣杯侍从",
+      "arcana": "Minor",
+      "suit": "Cups",
+      "number": 11,
+      "element": "Water",
+      "keywords": {
+        "upright": [
+          "curiosity",
+          "exploration",
+          "learning"
+        ],
+        "upright_cn": [
+          "好奇",
+          "探索",
+          "学习"
+        ],
+        "reversed": [
+          "lack of focus",
+          "immaturity"
+        ],
+        "reversed_cn": [
+          "缺乏专注",
+          "不成熟"
+        ]
+      },
+      "meanings": {
+        "upright_cn": "充满好奇心和探索精神，新的学习旅程。",
+        "reversed_cn": "注意力不集中或行为不够成熟。"
+      },
+      "topic_meanings": {
+        "love": {
+          "upright_cn": "内心敏感温柔，容易被爱情打动。",
+          "reversed_cn": "逆位时需要反思情感的流动中的不足。"
+        },
+        "career": {
+          "upright_cn": "用直觉和创意来面对工作。",
+          "reversed_cn": "逆位时职业满足感可能遇到阻碍。"
+        },
+        "destiny": {
+          "upright_cn": "用真诚的心去感受正缘的到来。",
+          "reversed_cn": "逆位时心灵契合的缘分可能暂时受阻。"
+        },
+        "family": {
+          "upright_cn": "对家人的需求敏感体贴。",
+          "reversed_cn": "逆位时家庭情感需要更多关注。"
+        },
+        "general": {
+          "upright_cn": "直觉敏锐，情感丰富。",
+          "reversed_cn": "逆位时情感与直觉方面需要注意。"
+        }
+      }
+    },
+    {
+      "card_id": 47,
+      "name_en": "Knight of Cups",
+      "name_cn": "圣杯骑士",
+      "arcana": "Minor",
+      "suit": "Cups",
+      "number": 12,
+      "element": "Water",
+      "keywords": {
+        "upright": [
+          "action",
+          "drive",
+          "ambition"
+        ],
+        "upright_cn": [
+          "行动",
+          "驱动力",
+          "抱负"
+        ],
+        "reversed": [
+          "recklessness",
+          "restlessness"
+        ],
+        "reversed_cn": [
+          "鲁莽",
+          "不安分"
+        ]
+      },
+      "meanings": {
+        "upright_cn": "充满行动力和抱负，勇往直前。",
+        "reversed_cn": "可能过于鲁莽或急躁。"
+      },
+      "topic_meanings": {
+        "love": {
+          "upright_cn": "浪漫的追求者出现，爱情充满诗意。",
+          "reversed_cn": "逆位时需要反思情感的流动中的不足。"
+        },
+        "career": {
+          "upright_cn": "以创意和热情投入工作。",
+          "reversed_cn": "逆位时职业满足感可能遇到阻碍。"
+        },
+        "destiny": {
+          "upright_cn": "正缘以浪漫的方式降临。",
+          "reversed_cn": "逆位时心灵契合的缘分可能暂时受阻。"
+        },
+        "family": {
+          "upright_cn": "为家庭带来温馨和惊喜。",
+          "reversed_cn": "逆位时家庭情感需要更多关注。"
+        },
+        "general": {
+          "upright_cn": "浪漫与热情交织。",
+          "reversed_cn": "逆位时情感与直觉方面需要注意。"
+        }
+      }
+    },
+    {
+      "card_id": 48,
+      "name_en": "Queen of Cups",
+      "name_cn": "圣杯王后",
+      "arcana": "Minor",
+      "suit": "Cups",
+      "number": 13,
+      "element": "Water",
+      "keywords": {
+        "upright": [
+          "nurturing",
+          "compassion",
+          "practicality"
+        ],
+        "upright_cn": [
+          "滋养",
+          "同情",
+          "务实"
+        ],
+        "reversed": [
+          "insecurity",
+          "neediness"
+        ],
+        "reversed_cn": [
+          "不安全感",
+          "依赖"
+        ]
+      },
+      "meanings": {
+        "upright_cn": "温暖而务实的力量，滋养周围的人。",
+        "reversed_cn": "可能过于依赖他人或缺乏安全感。"
+      },
+      "topic_meanings": {
+        "love": {
+          "upright_cn": "温暖体贴的伴侣，充满爱意和包容。",
+          "reversed_cn": "逆位时需要反思情感的流动中的不足。"
+        },
+        "career": {
+          "upright_cn": "工作中展现关怀和创造力。",
+          "reversed_cn": "逆位时职业满足感可能遇到阻碍。"
+        },
+        "destiny": {
+          "upright_cn": "正缘是一位温柔包容的人。",
+          "reversed_cn": "逆位时心灵契合的缘分可能暂时受阻。"
+        },
+        "family": {
+          "upright_cn": "家庭中的温暖港湾。",
+          "reversed_cn": "逆位时家庭情感需要更多关注。"
+        },
+        "general": {
+          "upright_cn": "以爱和温柔面对一切。",
+          "reversed_cn": "逆位时情感与直觉方面需要注意。"
+        }
+      }
+    },
+    {
+      "card_id": 49,
+      "name_en": "King of Cups",
+      "name_cn": "圣杯国王",
+      "arcana": "Minor",
+      "suit": "Cups",
+      "number": 14,
+      "element": "Water",
+      "keywords": {
+        "upright": [
+          "authority",
+          "structure",
+          "discipline"
+        ],
+        "upright_cn": [
+          "权威",
+          "结构",
+          "纪律"
+        ],
+        "reversed": [
+          "tyranny",
+          "rigidity"
+        ],
+        "reversed_cn": [
+          "专制",
+          "固执"
+        ]
+      },
+      "meanings": {
+        "upright_cn": "成熟的权威和领导力，建立稳固的结构。",
+        "reversed_cn": "可能过于专制或固执己见。"
+      },
+      "topic_meanings": {
+        "love": {
+          "upright_cn": "感情中成熟稳重，给予深厚的爱和关怀。",
+          "reversed_cn": "逆位时需要反思情感的流动中的不足。"
+        },
+        "career": {
+          "upright_cn": "以情感智慧处理工作中的关系。",
+          "reversed_cn": "逆位时职业满足感可能遇到阻碍。"
+        },
+        "destiny": {
+          "upright_cn": "正缘是一位情感成熟的人。",
+          "reversed_cn": "逆位时心灵契合的缘分可能暂时受阻。"
+        },
+        "family": {
+          "upright_cn": "家庭中的情感支柱。",
+          "reversed_cn": "逆位时家庭情感需要更多关注。"
+        },
+        "general": {
+          "upright_cn": "情感的智慧与成熟。",
+          "reversed_cn": "逆位时情感与直觉方面需要注意。"
+        }
+      }
+    },
+    {
+      "card_id": 50,
+      "name_en": "Ace of Swords",
+      "name_cn": "宝剑首牌",
+      "arcana": "Minor",
+      "suit": "Swords",
+      "number": 1,
+      "element": "Air",
+      "keywords": {
+        "upright": [
+          "new beginnings",
+          "opportunity",
+          "potential"
+        ],
+        "upright_cn": [
+          "新的开始",
+          "机遇",
+          "潜力"
+        ],
+        "reversed": [
+          "missed opportunity",
+          "false start"
+        ],
+        "reversed_cn": [
+          "错失良机",
+          "不顺利的开始"
+        ]
+      },
+      "meanings": {
+        "upright_cn": "一个全新的开始，充满了潜力和机遇。",
+        "reversed_cn": "机会可能被错过，或者开端不够顺利。"
+      },
+      "topic_meanings": {
+        "love": {
+          "upright_cn": "感情中的真相浮出水面，清晰的沟通带来突破。",
+          "reversed_cn": "逆位时需要反思理性与沟通中的不足。"
+        },
+        "career": {
+          "upright_cn": "新思路和清晰的判断力带来事业突破。",
+          "reversed_cn": "逆位时职场策略可能遇到阻碍。"
+        },
+        "destiny": {
+          "upright_cn": "正缘需要你用理性的眼光去识别。",
+          "reversed_cn": "逆位时理性审视的缘分可能暂时受阻。"
+        },
+        "family": {
+          "upright_cn": "家庭中需要坦诚沟通。",
+          "reversed_cn": "逆位时家庭沟通需要更多关注。"
+        },
+        "general": {
+          "upright_cn": "清晰的思维和果断的决定。",
+          "reversed_cn": "逆位时思考与抉择方面需要注意。"
+        }
+      }
+    },
+    {
+      "card_id": 51,
+      "name_en": "Two of Swords",
+      "name_cn": "宝剑二",
+      "arcana": "Minor",
+      "suit": "Swords",
+      "number": 2,
+      "element": "Air",
+      "keywords": {
+        "upright": [
+          "balance",
+          "decisions",
+          "duality"
+        ],
+        "upright_cn": [
+          "平衡",
+          "抉择",
+          "二元性"
+        ],
+        "reversed": [
+          "imbalance",
+          "indecision"
+        ],
+        "reversed_cn": [
+          "失衡",
+          "犹豫不决"
+        ]
+      },
+      "meanings": {
+        "upright_cn": "面临选择和平衡的考验，需要在两个方向间做出决定。",
+        "reversed_cn": "失衡或犹豫不决，难以做出选择。"
+      },
+      "topic_meanings": {
+        "love": {
+          "upright_cn": "感情中的僵局需要打破，逃避不能解决问题。",
+          "reversed_cn": "逆位时需要反思理性与沟通中的不足。"
+        },
+        "career": {
+          "upright_cn": "工作中面临艰难的抉择。",
+          "reversed_cn": "逆位时职场策略可能遇到阻碍。"
+        },
+        "destiny": {
+          "upright_cn": "正缘前需要先做出一个困难的决定。",
+          "reversed_cn": "逆位时理性审视的缘分可能暂时受阻。"
+        },
+        "family": {
+          "upright_cn": "家庭中的冷战需要化解。",
+          "reversed_cn": "逆位时家庭沟通需要更多关注。"
+        },
+        "general": {
+          "upright_cn": "需要面对困难的选择。",
+          "reversed_cn": "逆位时思考与抉择方面需要注意。"
+        }
+      }
+    },
+    {
+      "card_id": 52,
+      "name_en": "Three of Swords",
+      "name_cn": "宝剑三",
+      "arcana": "Minor",
+      "suit": "Swords",
+      "number": 3,
+      "element": "Air",
+      "keywords": {
+        "upright": [
+          "growth",
+          "expansion",
+          "collaboration"
+        ],
+        "upright_cn": [
+          "成长",
+          "扩展",
+          "合作"
+        ],
+        "reversed": [
+          "delays",
+          "lack of growth"
+        ],
+        "reversed_cn": [
+          "延迟",
+          "成长受阻"
+        ]
+      },
+      "meanings": {
+        "upright_cn": "成长和扩张的时期，合作带来进展。",
+        "reversed_cn": "成长受阻，合作可能出现问题。"
+      },
+      "topic_meanings": {
+        "love": {
+          "upright_cn": "感情中的痛苦和心碎，但这也是治愈的开始。",
+          "reversed_cn": "逆位时需要反思理性与沟通中的不足。"
+        },
+        "career": {
+          "upright_cn": "工作中遭遇打击，需要时间恢复。",
+          "reversed_cn": "逆位时职场策略可能遇到阻碍。"
+        },
+        "destiny": {
+          "upright_cn": "过去的感情伤痛需要先治愈才能迎接正缘。",
+          "reversed_cn": "逆位时理性审视的缘分可能暂时受阻。"
+        },
+        "family": {
+          "upright_cn": "家庭中存在令人痛心的问题。",
+          "reversed_cn": "逆位时家庭沟通需要更多关注。"
+        },
+        "general": {
+          "upright_cn": "痛苦是暂时的，治愈终会到来。",
+          "reversed_cn": "逆位时思考与抉择方面需要注意。"
+        }
+      }
+    },
+    {
+      "card_id": 53,
+      "name_en": "Four of Swords",
+      "name_cn": "宝剑四",
+      "arcana": "Minor",
+      "suit": "Swords",
+      "number": 4,
+      "element": "Air",
+      "keywords": {
+        "upright": [
+          "stability",
+          "structure",
+          "security"
+        ],
+        "upright_cn": [
+          "稳定",
+          "结构",
+          "安全"
+        ],
+        "reversed": [
+          "instability",
+          "lack of security"
+        ],
+        "reversed_cn": [
+          "不稳定",
+          "缺乏安全感"
+        ]
+      },
+      "meanings": {
+        "upright_cn": "稳定和安全的局面，结构化的进展。",
+        "reversed_cn": "稳定受到威胁，可能感到不安全。"
+      },
+      "topic_meanings": {
+        "love": {
+          "upright_cn": "感情中需要休息和疗愈的空间。",
+          "reversed_cn": "逆位时需要反思理性与沟通中的不足。"
+        },
+        "career": {
+          "upright_cn": "工作是时候休息充电了。",
+          "reversed_cn": "逆位时职场策略可能遇到阻碍。"
+        },
+        "destiny": {
+          "upright_cn": "在安静中恢复，为正缘做好准备。",
+          "reversed_cn": "逆位时理性审视的缘分可能暂时受阻。"
+        },
+        "family": {
+          "upright_cn": "家庭中需要一段平静的时光。",
+          "reversed_cn": "逆位时家庭沟通需要更多关注。"
+        },
+        "general": {
+          "upright_cn": "休息和恢复是必要的。",
+          "reversed_cn": "逆位时思考与抉择方面需要注意。"
+        }
+      }
+    },
+    {
+      "card_id": 54,
+      "name_en": "Five of Swords",
+      "name_cn": "宝剑五",
+      "arcana": "Minor",
+      "suit": "Swords",
+      "number": 5,
+      "element": "Air",
+      "keywords": {
+        "upright": [
+          "conflict",
+          "loss",
+          "challenge"
+        ],
+        "upright_cn": [
+          "冲突",
+          "失去",
+          "挑战"
+        ],
+        "reversed": [
+          "recovery",
+          "moving on"
+        ],
+        "reversed_cn": [
+          "恢复",
+          "向前看"
+        ]
+      },
+      "meanings": {
+        "upright_cn": "面临冲突或挑战，可能经历一些损失。",
+        "reversed_cn": "从困境中恢复，开始向前看。"
+      },
+      "topic_meanings": {
+        "love": {
+          "upright_cn": "感情冲突激烈，需要放下自尊寻求和解。",
+          "reversed_cn": "逆位时需要反思理性与沟通中的不足。"
+        },
+        "career": {
+          "upright_cn": "职场纷争不断，注意言行。",
+          "reversed_cn": "逆位时职场策略可能遇到阻碍。"
+        },
+        "destiny": {
+          "upright_cn": "不要让冲突阻碍了正缘的到来。",
+          "reversed_cn": "逆位时理性审视的缘分可能暂时受阻。"
+        },
+        "family": {
+          "upright_cn": "家庭争吵需要冷静处理。",
+          "reversed_cn": "逆位时家庭沟通需要更多关注。"
+        },
+        "general": {
+          "upright_cn": "冲突虽痛苦但能带来清醒。",
+          "reversed_cn": "逆位时思考与抉择方面需要注意。"
+        }
+      }
+    },
+    {
+      "card_id": 55,
+      "name_en": "Six of Swords",
+      "name_cn": "宝剑六",
+      "arcana": "Minor",
+      "suit": "Swords",
+      "number": 6,
+      "element": "Air",
+      "keywords": {
+        "upright": [
+          "harmony",
+          "generosity",
+          "gratitude"
+        ],
+        "upright_cn": [
+          "和谐",
+          "慷慨",
+          "感恩"
+        ],
+        "reversed": [
+          "selfishness",
+          "ingratitude"
+        ],
+        "reversed_cn": [
+          "自私",
+          "不知感恩"
+        ]
+      },
+      "meanings": {
+        "upright_cn": "和谐与慷慨，充满感恩的时刻。",
+        "reversed_cn": "可能忽略了感恩，或过于计较得失。"
+      },
+      "topic_meanings": {
+        "love": {
+          "upright_cn": "从感情的低谷中慢慢走出，向着更好的方向前进。",
+          "reversed_cn": "逆位时需要反思理性与沟通中的不足。"
+        },
+        "career": {
+          "upright_cn": "离开不利的工作环境，寻找新的出路。",
+          "reversed_cn": "逆位时职场策略可能遇到阻碍。"
+        },
+        "destiny": {
+          "upright_cn": "放下过去的伤痛，正缘在前方等你。",
+          "reversed_cn": "逆位时理性审视的缘分可能暂时受阻。"
+        },
+        "family": {
+          "upright_cn": "家庭关系正在改善。",
+          "reversed_cn": "逆位时家庭沟通需要更多关注。"
+        },
+        "general": {
+          "upright_cn": "过渡期，正在向好的方向转变。",
+          "reversed_cn": "逆位时思考与抉择方面需要注意。"
+        }
+      }
+    },
+    {
+      "card_id": 56,
+      "name_en": "Seven of Swords",
+      "name_cn": "宝剑七",
+      "arcana": "Minor",
+      "suit": "Swords",
+      "number": 7,
+      "element": "Air",
+      "keywords": {
+        "upright": [
+          "reflection",
+          "assessment",
+          "patience"
+        ],
+        "upright_cn": [
+          "反思",
+          "评估",
+          "耐心"
+        ],
+        "reversed": [
+          "impulsiveness",
+          "lack of reflection"
+        ],
+        "reversed_cn": [
+          "冲动",
+          "缺乏反思"
+        ]
+      },
+      "meanings": {
+        "upright_cn": "需要耐心和反思，评估当前的状况。",
+        "reversed_cn": "过于急躁，缺乏必要的反思。"
+      },
+      "topic_meanings": {
+        "love": {
+          "upright_cn": "感情中可能存在欺骗或不诚实。",
+          "reversed_cn": "逆位时需要反思理性与沟通中的不足。"
+        },
+        "career": {
+          "upright_cn": "工作中需要警惕不正当的行为。",
+          "reversed_cn": "逆位时职场策略可能遇到阻碍。"
+        },
+        "destiny": {
+          "upright_cn": "不要被花言巧语迷惑了真正的正缘。",
+          "reversed_cn": "逆位时理性审视的缘分可能暂时受阻。"
+        },
+        "family": {
+          "upright_cn": "家庭中可能有隐藏的问题。",
+          "reversed_cn": "逆位时家庭沟通需要更多关注。"
+        },
+        "general": {
+          "upright_cn": "需要看清事物的真相。",
+          "reversed_cn": "逆位时思考与抉择方面需要注意。"
+        }
+      }
+    },
+    {
+      "card_id": 57,
+      "name_en": "Eight of Swords",
+      "name_cn": "宝剑八",
+      "arcana": "Minor",
+      "suit": "Swords",
+      "number": 8,
+      "element": "Air",
+      "keywords": {
+        "upright": [
+          "mastery",
+          "skill",
+          "diligence"
+        ],
+        "upright_cn": [
+          "精进",
+          "技艺",
+          "勤奋"
+        ],
+        "reversed": [
+          "lack of focus",
+          "perfectionism"
+        ],
+        "reversed_cn": [
+          "缺乏专注",
+          "完美主义"
+        ]
+      },
+      "meanings": {
+        "upright_cn": "通过勤奋和专注达到精进，技艺日益成熟。",
+        "reversed_cn": "可能过于追求完美或缺乏专注。"
+      },
+      "topic_meanings": {
+        "love": {
+          "upright_cn": "感情中感到被困住和束缚，需要打破限制。",
+          "reversed_cn": "逆位时需要反思理性与沟通中的不足。"
+        },
+        "career": {
+          "upright_cn": "工作中感到受限和无力。",
+          "reversed_cn": "逆位时职场策略可能遇到阻碍。"
+        },
+        "destiny": {
+          "upright_cn": "内心的恐惧阻碍了正缘的到来。",
+          "reversed_cn": "逆位时理性审视的缘分可能暂时受阻。"
+        },
+        "family": {
+          "upright_cn": "家庭中的限制感需要打破。",
+          "reversed_cn": "逆位时家庭沟通需要更多关注。"
+        },
+        "general": {
+          "upright_cn": "感到被困，但解脱即将来临。",
+          "reversed_cn": "逆位时思考与抉择方面需要注意。"
+        }
+      }
+    },
+    {
+      "card_id": 58,
+      "name_en": "Nine of Swords",
+      "name_cn": "宝剑九",
+      "arcana": "Minor",
+      "suit": "Swords",
+      "number": 9,
+      "element": "Air",
+      "keywords": {
+        "upright": [
+          "abundance",
+          "luxury",
+          "gratitude"
+        ],
+        "upright_cn": [
+          "丰盛",
+          "奢华",
+          "感恩"
+        ],
+        "reversed": [
+          "greed",
+          "dissatisfaction"
+        ],
+        "reversed_cn": [
+          "贪婪",
+          "不满足"
+        ]
+      },
+      "meanings": {
+        "upright_cn": "丰盛和满足，享受劳动的成果。",
+        "reversed_cn": "可能过于贪心或不满足现状。"
+      },
+      "topic_meanings": {
+        "love": {
+          "upright_cn": "对感情的焦虑和担忧，很多恐惧其实是想象。",
+          "reversed_cn": "逆位时需要反思理性与沟通中的不足。"
+        },
+        "career": {
+          "upright_cn": "对工作的过度担忧影响表现。",
+          "reversed_cn": "逆位时职场策略可能遇到阻碍。"
+        },
+        "destiny": {
+          "upright_cn": "不要让恐惧阻止你相信正缘。",
+          "reversed_cn": "逆位时理性审视的缘分可能暂时受阻。"
+        },
+        "family": {
+          "upright_cn": "对家庭问题的过度焦虑。",
+          "reversed_cn": "逆位时家庭沟通需要更多关注。"
+        },
+        "general": {
+          "upright_cn": "很多恐惧只是心理的幻影。",
+          "reversed_cn": "逆位时思考与抉择方面需要注意。"
+        }
+      }
+    },
+    {
+      "card_id": 59,
+      "name_en": "Ten of Swords",
+      "name_cn": "宝剑十",
+      "arcana": "Minor",
+      "suit": "Swords",
+      "number": 10,
+      "element": "Air",
+      "keywords": {
+        "upright": [
+          "completion",
+          "burden",
+          "responsibility"
+        ],
+        "upright_cn": [
+          "完成",
+          "重担",
+          "责任"
+        ],
+        "reversed": [
+          "release",
+          "delegation"
+        ],
+        "reversed_cn": [
+          "释放",
+          "分摊"
+        ]
+      },
+      "meanings": {
+        "upright_cn": "一个周期的完成，但也带来了沉重的责任。",
+        "reversed_cn": "开始释放重担，学会分摊责任。"
+      },
+      "topic_meanings": {
+        "love": {
+          "upright_cn": "感情的痛苦终结，但黎明前的黑暗过后是新生。",
+          "reversed_cn": "逆位时需要反思理性与沟通中的不足。"
+        },
+        "career": {
+          "upright_cn": "一个工作阶段的痛苦终结。",
+          "reversed_cn": "逆位时职场策略可能遇到阻碍。"
+        },
+        "destiny": {
+          "upright_cn": "旧的结束是为了给正缘腾出空间。",
+          "reversed_cn": "逆位时理性审视的缘分可能暂时受阻。"
+        },
+        "family": {
+          "upright_cn": "家庭关系的重大转变。",
+          "reversed_cn": "逆位时家庭沟通需要更多关注。"
+        },
+        "general": {
+          "upright_cn": "痛苦结束，新的开始即将到来。",
+          "reversed_cn": "逆位时思考与抉择方面需要注意。"
+        }
+      }
+    },
+    {
+      "card_id": 60,
+      "name_en": "Page of Swords",
+      "name_cn": "宝剑侍从",
+      "arcana": "Minor",
+      "suit": "Swords",
+      "number": 11,
+      "element": "Air",
+      "keywords": {
+        "upright": [
+          "curiosity",
+          "exploration",
+          "learning"
+        ],
+        "upright_cn": [
+          "好奇",
+          "探索",
+          "学习"
+        ],
+        "reversed": [
+          "lack of focus",
+          "immaturity"
+        ],
+        "reversed_cn": [
+          "缺乏专注",
+          "不成熟"
+        ]
+      },
+      "meanings": {
+        "upright_cn": "充满好奇心和探索精神，新的学习旅程。",
+        "reversed_cn": "注意力不集中或行为不够成熟。"
+      },
+      "topic_meanings": {
+        "love": {
+          "upright_cn": "对感情充满好奇但可能过于理性。",
+          "reversed_cn": "逆位时需要反思理性与沟通中的不足。"
+        },
+        "career": {
+          "upright_cn": "以新的视角看待工作问题。",
+          "reversed_cn": "逆位时职场策略可能遇到阻碍。"
+        },
+        "destiny": {
+          "upright_cn": "用敏锐的洞察力识别正缘。",
+          "reversed_cn": "逆位时理性审视的缘分可能暂时受阻。"
+        },
+        "family": {
+          "upright_cn": "需要用智慧处理家庭关系。",
+          "reversed_cn": "逆位时家庭沟通需要更多关注。"
+        },
+        "general": {
+          "upright_cn": "好奇心驱动学习和成长。",
+          "reversed_cn": "逆位时思考与抉择方面需要注意。"
+        }
+      }
+    },
+    {
+      "card_id": 61,
+      "name_en": "Knight of Swords",
+      "name_cn": "宝剑骑士",
+      "arcana": "Minor",
+      "suit": "Swords",
+      "number": 12,
+      "element": "Air",
+      "keywords": {
+        "upright": [
+          "action",
+          "drive",
+          "ambition"
+        ],
+        "upright_cn": [
+          "行动",
+          "驱动力",
+          "抱负"
+        ],
+        "reversed": [
+          "recklessness",
+          "restlessness"
+        ],
+        "reversed_cn": [
+          "鲁莽",
+          "不安分"
+        ]
+      },
+      "meanings": {
+        "upright_cn": "充满行动力和抱负，勇往直前。",
+        "reversed_cn": "可能过于鲁莽或急躁。"
+      },
+      "topic_meanings": {
+        "love": {
+          "upright_cn": "感情中行动迅速但可能过于急躁。",
+          "reversed_cn": "逆位时需要反思理性与沟通中的不足。"
+        },
+        "career": {
+          "upright_cn": "工作中快速行动，但需注意方向。",
+          "reversed_cn": "逆位时职场策略可能遇到阻碍。"
+        },
+        "destiny": {
+          "upright_cn": "不要因为急躁而错过正缘的信号。",
+          "reversed_cn": "逆位时理性审视的缘分可能暂时受阻。"
+        },
+        "family": {
+          "upright_cn": "家庭中行动力强但需注意方式。",
+          "reversed_cn": "逆位时家庭沟通需要更多关注。"
+        },
+        "general": {
+          "upright_cn": "行动力强但需控制节奏。",
+          "reversed_cn": "逆位时思考与抉择方面需要注意。"
+        }
+      }
+    },
+    {
+      "card_id": 62,
+      "name_en": "Queen of Swords",
+      "name_cn": "宝剑王后",
+      "arcana": "Minor",
+      "suit": "Swords",
+      "number": 13,
+      "element": "Air",
+      "keywords": {
+        "upright": [
+          "nurturing",
+          "compassion",
+          "practicality"
+        ],
+        "upright_cn": [
+          "滋养",
+          "同情",
+          "务实"
+        ],
+        "reversed": [
+          "insecurity",
+          "neediness"
+        ],
+        "reversed_cn": [
+          "不安全感",
+          "依赖"
+        ]
+      },
+      "meanings": {
+        "upright_cn": "温暖而务实的力量，滋养周围的人。",
+        "reversed_cn": "可能过于依赖他人或缺乏安全感。"
+      },
+      "topic_meanings": {
+        "love": {
+          "upright_cn": "以理性和独立的态度面对感情。",
+          "reversed_cn": "逆位时需要反思理性与沟通中的不足。"
+        },
+        "career": {
+          "upright_cn": "工作中展现清晰的判断力。",
+          "reversed_cn": "逆位时职场策略可能遇到阻碍。"
+        },
+        "destiny": {
+          "upright_cn": "正缘需要在理性与感性间找到平衡。",
+          "reversed_cn": "逆位时理性审视的缘分可能暂时受阻。"
+        },
+        "family": {
+          "upright_cn": "以智慧处理家庭事务。",
+          "reversed_cn": "逆位时家庭沟通需要更多关注。"
+        },
+        "general": {
+          "upright_cn": "独立而敏锐的洞察力。",
+          "reversed_cn": "逆位时思考与抉择方面需要注意。"
+        }
+      }
+    },
+    {
+      "card_id": 63,
+      "name_en": "King of Swords",
+      "name_cn": "宝剑国王",
+      "arcana": "Minor",
+      "suit": "Swords",
+      "number": 14,
+      "element": "Air",
+      "keywords": {
+        "upright": [
+          "authority",
+          "structure",
+          "discipline"
+        ],
+        "upright_cn": [
+          "权威",
+          "结构",
+          "纪律"
+        ],
+        "reversed": [
+          "tyranny",
+          "rigidity"
+        ],
+        "reversed_cn": [
+          "专制",
+          "固执"
+        ]
+      },
+      "meanings": {
+        "upright_cn": "成熟的权威和领导力，建立稳固的结构。",
+        "reversed_cn": "可能过于专制或固执己见。"
+      },
+      "topic_meanings": {
+        "love": {
+          "upright_cn": "感情中理性成熟，能做出明智的判断。",
+          "reversed_cn": "逆位时需要反思理性与沟通中的不足。"
+        },
+        "career": {
+          "upright_cn": "以权威和智慧引领事业方向。",
+          "reversed_cn": "逆位时职场策略可能遇到阻碍。"
+        },
+        "destiny": {
+          "upright_cn": "正缘是一位聪明且有决断力的人。",
+          "reversed_cn": "逆位时理性审视的缘分可能暂时受阻。"
+        },
+        "family": {
+          "upright_cn": "家庭中的理性力量。",
+          "reversed_cn": "逆位时家庭沟通需要更多关注。"
+        },
+        "general": {
+          "upright_cn": "清晰的思维和坚定的决断。",
+          "reversed_cn": "逆位时思考与抉择方面需要注意。"
+        }
+      }
+    },
+    {
+      "card_id": 64,
+      "name_en": "Ace of Pentacles",
+      "name_cn": "星币首牌",
+      "arcana": "Minor",
+      "suit": "Pentacles",
+      "number": 1,
+      "element": "Earth",
+      "keywords": {
+        "upright": [
+          "new beginnings",
+          "opportunity",
+          "potential"
+        ],
+        "upright_cn": [
+          "新的开始",
+          "机遇",
+          "潜力"
+        ],
+        "reversed": [
+          "missed opportunity",
+          "false start"
+        ],
+        "reversed_cn": [
+          "错失良机",
+          "不顺利的开始"
+        ]
+      },
+      "meanings": {
+        "upright_cn": "一个全新的开始，充满了潜力和机遇。",
+        "reversed_cn": "机会可能被错过，或者开端不够顺利。"
+      },
+      "topic_meanings": {
+        "love": {
+          "upright_cn": "一段有物质基础和实际承诺的新关系。",
+          "reversed_cn": "逆位时需要反思稳定与承诺中的不足。"
+        },
+        "career": {
+          "upright_cn": "新的财务机会或事业开端。",
+          "reversed_cn": "逆位时财富与成就可能遇到阻碍。"
+        },
+        "destiny": {
+          "upright_cn": "正缘有着稳固的现实基础。",
+          "reversed_cn": "逆位时踏实长久的缘分可能暂时受阻。"
+        },
+        "family": {
+          "upright_cn": "家庭经济状况改善。",
+          "reversed_cn": "逆位时家庭安定需要更多关注。"
+        },
+        "general": {
+          "upright_cn": "新的财务机遇和实际进展。",
+          "reversed_cn": "逆位时物质与现实方面需要注意。"
+        }
+      }
+    },
+    {
+      "card_id": 65,
+      "name_en": "Two of Pentacles",
+      "name_cn": "星币二",
+      "arcana": "Minor",
+      "suit": "Pentacles",
+      "number": 2,
+      "element": "Earth",
+      "keywords": {
+        "upright": [
+          "balance",
+          "decisions",
+          "duality"
+        ],
+        "upright_cn": [
+          "平衡",
+          "抉择",
+          "二元性"
+        ],
+        "reversed": [
+          "imbalance",
+          "indecision"
+        ],
+        "reversed_cn": [
+          "失衡",
+          "犹豫不决"
+        ]
+      },
+      "meanings": {
+        "upright_cn": "面临选择和平衡的考验，需要在两个方向间做出决定。",
+        "reversed_cn": "失衡或犹豫不决，难以做出选择。"
+      },
+      "topic_meanings": {
+        "love": {
+          "upright_cn": "在感情的多个方面之间寻找平衡。",
+          "reversed_cn": "逆位时需要反思稳定与承诺中的不足。"
+        },
+        "career": {
+          "upright_cn": "在工作中平衡多项任务或资源。",
+          "reversed_cn": "逆位时财富与成就可能遇到阻碍。"
+        },
+        "destiny": {
+          "upright_cn": "正缘需要你在现实与浪漫间找到平衡。",
+          "reversed_cn": "逆位时踏实长久的缘分可能暂时受阻。"
+        },
+        "family": {
+          "upright_cn": "平衡家庭的经济与情感需求。",
+          "reversed_cn": "逆位时家庭安定需要更多关注。"
+        },
+        "general": {
+          "upright_cn": "灵活应变，在变化中保持平衡。",
+          "reversed_cn": "逆位时物质与现实方面需要注意。"
+        }
+      }
+    },
+    {
+      "card_id": 66,
+      "name_en": "Three of Pentacles",
+      "name_cn": "星币三",
+      "arcana": "Minor",
+      "suit": "Pentacles",
+      "number": 3,
+      "element": "Earth",
+      "keywords": {
+        "upright": [
+          "growth",
+          "expansion",
+          "collaboration"
+        ],
+        "upright_cn": [
+          "成长",
+          "扩展",
+          "合作"
+        ],
+        "reversed": [
+          "delays",
+          "lack of growth"
+        ],
+        "reversed_cn": [
+          "延迟",
+          "成长受阻"
+        ]
+      },
+      "meanings": {
+        "upright_cn": "成长和扩张的时期，合作带来进展。",
+        "reversed_cn": "成长受阻，合作可能出现问题。"
+      },
+      "topic_meanings": {
+        "love": {
+          "upright_cn": "共同建设感情的基础，合作共赢。",
+          "reversed_cn": "逆位时需要反思稳定与承诺中的不足。"
+        },
+        "career": {
+          "upright_cn": "团队合作完成重要项目。",
+          "reversed_cn": "逆位时财富与成就可能遇到阻碍。"
+        },
+        "destiny": {
+          "upright_cn": "与正缘共同打造美好未来。",
+          "reversed_cn": "逆位时踏实长久的缘分可能暂时受阻。"
+        },
+        "family": {
+          "upright_cn": "家人共同建设温馨的家。",
+          "reversed_cn": "逆位时家庭安定需要更多关注。"
+        },
+        "general": {
+          "upright_cn": "合作与学习带来实际成果。",
+          "reversed_cn": "逆位时物质与现实方面需要注意。"
+        }
+      }
+    },
+    {
+      "card_id": 67,
+      "name_en": "Four of Pentacles",
+      "name_cn": "星币四",
+      "arcana": "Minor",
+      "suit": "Pentacles",
+      "number": 4,
+      "element": "Earth",
+      "keywords": {
+        "upright": [
+          "stability",
+          "structure",
+          "security"
+        ],
+        "upright_cn": [
+          "稳定",
+          "结构",
+          "安全"
+        ],
+        "reversed": [
+          "instability",
+          "lack of security"
+        ],
+        "reversed_cn": [
+          "不稳定",
+          "缺乏安全感"
+        ]
+      },
+      "meanings": {
+        "upright_cn": "稳定和安全的局面，结构化的进展。",
+        "reversed_cn": "稳定受到威胁，可能感到不安全。"
+      },
+      "topic_meanings": {
+        "love": {
+          "upright_cn": "感情中可能过于保守或控制。",
+          "reversed_cn": "逆位时需要反思稳定与承诺中的不足。"
+        },
+        "career": {
+          "upright_cn": "对财务和资源的谨慎管理。",
+          "reversed_cn": "逆位时财富与成就可能遇到阻碍。"
+        },
+        "destiny": {
+          "upright_cn": "不要因过度保守而错过了正缘。",
+          "reversed_cn": "逆位时踏实长久的缘分可能暂时受阻。"
+        },
+        "family": {
+          "upright_cn": "家庭中对资源的控制可能引发矛盾。",
+          "reversed_cn": "逆位时家庭安定需要更多关注。"
+        },
+        "general": {
+          "upright_cn": "需要在对稳定和开放间找到平衡。",
+          "reversed_cn": "逆位时物质与现实方面需要注意。"
+        }
+      }
+    },
+    {
+      "card_id": 68,
+      "name_en": "Five of Pentacles",
+      "name_cn": "星币五",
+      "arcana": "Minor",
+      "suit": "Pentacles",
+      "number": 5,
+      "element": "Earth",
+      "keywords": {
+        "upright": [
+          "conflict",
+          "loss",
+          "challenge"
+        ],
+        "upright_cn": [
+          "冲突",
+          "失去",
+          "挑战"
+        ],
+        "reversed": [
+          "recovery",
+          "moving on"
+        ],
+        "reversed_cn": [
+          "恢复",
+          "向前看"
+        ]
+      },
+      "meanings": {
+        "upright_cn": "面临冲突或挑战，可能经历一些损失。",
+        "reversed_cn": "从困境中恢复，开始向前看。"
+      },
+      "topic_meanings": {
+        "love": {
+          "upright_cn": "感情中的匮乏感或物质上的困难。",
+          "reversed_cn": "逆位时需要反思稳定与承诺中的不足。"
+        },
+        "career": {
+          "upright_cn": "事业上遇到经济困难或被孤立。",
+          "reversed_cn": "逆位时财富与成就可能遇到阻碍。"
+        },
+        "destiny": {
+          "upright_cn": "当前的困境不代表没有正缘。",
+          "reversed_cn": "逆位时踏实长久的缘分可能暂时受阻。"
+        },
+        "family": {
+          "upright_cn": "家庭中可能面临经济压力。",
+          "reversed_cn": "逆位时家庭安定需要更多关注。"
+        },
+        "general": {
+          "upright_cn": "困难是暂时的，寻求帮助是明智的。",
+          "reversed_cn": "逆位时物质与现实方面需要注意。"
+        }
+      }
+    },
+    {
+      "card_id": 69,
+      "name_en": "Six of Pentacles",
+      "name_cn": "星币六",
+      "arcana": "Minor",
+      "suit": "Pentacles",
+      "number": 6,
+      "element": "Earth",
+      "keywords": {
+        "upright": [
+          "harmony",
+          "generosity",
+          "gratitude"
+        ],
+        "upright_cn": [
+          "和谐",
+          "慷慨",
+          "感恩"
+        ],
+        "reversed": [
+          "selfishness",
+          "ingratitude"
+        ],
+        "reversed_cn": [
+          "自私",
+          "不知感恩"
+        ]
+      },
+      "meanings": {
+        "upright_cn": "和谐与慷慨，充满感恩的时刻。",
+        "reversed_cn": "可能忽略了感恩，或过于计较得失。"
+      },
+      "topic_meanings": {
+        "love": {
+          "upright_cn": "感情中慷慨给予和接受爱。",
+          "reversed_cn": "逆位时需要反思稳定与承诺中的不足。"
+        },
+        "career": {
+          "upright_cn": "工作中获得资助或慷慨的帮助。",
+          "reversed_cn": "逆位时财富与成就可能遇到阻碍。"
+        },
+        "destiny": {
+          "upright_cn": "正缘会在你最需要的时候出现。",
+          "reversed_cn": "逆位时踏实长久的缘分可能暂时受阻。"
+        },
+        "family": {
+          "upright_cn": "家庭中互相帮助和支持。",
+          "reversed_cn": "逆位时家庭安定需要更多关注。"
+        },
+        "general": {
+          "upright_cn": "慷慨带来回报，施与受的平衡。",
+          "reversed_cn": "逆位时物质与现实方面需要注意。"
+        }
+      }
+    },
+    {
+      "card_id": 70,
+      "name_en": "Seven of Pentacles",
+      "name_cn": "星币七",
+      "arcana": "Minor",
+      "suit": "Pentacles",
+      "number": 7,
+      "element": "Earth",
+      "keywords": {
+        "upright": [
+          "reflection",
+          "assessment",
+          "patience"
+        ],
+        "upright_cn": [
+          "反思",
+          "评估",
+          "耐心"
+        ],
+        "reversed": [
+          "impulsiveness",
+          "lack of reflection"
+        ],
+        "reversed_cn": [
+          "冲动",
+          "缺乏反思"
+        ]
+      },
+      "meanings": {
+        "upright_cn": "需要耐心和反思，评估当前的状况。",
+        "reversed_cn": "过于急躁，缺乏必要的反思。"
+      },
+      "topic_meanings": {
+        "love": {
+          "upright_cn": "对感情的长期投资需要耐心等待回报。",
+          "reversed_cn": "逆位时需要反思稳定与承诺中的不足。"
+        },
+        "career": {
+          "upright_cn": "审视事业进展，调整长期策略。",
+          "reversed_cn": "逆位时财富与成就可能遇到阻碍。"
+        },
+        "destiny": {
+          "upright_cn": "正缘需要时间的沉淀和等待。",
+          "reversed_cn": "逆位时踏实长久的缘分可能暂时受阻。"
+        },
+        "family": {
+          "upright_cn": "耐心经营家庭关系将获得回报。",
+          "reversed_cn": "逆位时家庭安定需要更多关注。"
+        },
+        "general": {
+          "upright_cn": "耐心和长远的目光。",
+          "reversed_cn": "逆位时物质与现实方面需要注意。"
+        }
+      }
+    },
+    {
+      "card_id": 71,
+      "name_en": "Eight of Pentacles",
+      "name_cn": "星币八",
+      "arcana": "Minor",
+      "suit": "Pentacles",
+      "number": 8,
+      "element": "Earth",
+      "keywords": {
+        "upright": [
+          "mastery",
+          "skill",
+          "diligence"
+        ],
+        "upright_cn": [
+          "精进",
+          "技艺",
+          "勤奋"
+        ],
+        "reversed": [
+          "lack of focus",
+          "perfectionism"
+        ],
+        "reversed_cn": [
+          "缺乏专注",
+          "完美主义"
+        ]
+      },
+      "meanings": {
+        "upright_cn": "通过勤奋和专注达到精进，技艺日益成熟。",
+        "reversed_cn": "可能过于追求完美或缺乏专注。"
+      },
+      "topic_meanings": {
+        "love": {
+          "upright_cn": "用心经营感情，精益求精。",
+          "reversed_cn": "逆位时需要反思稳定与承诺中的不足。"
+        },
+        "career": {
+          "upright_cn": "专注工作技能的磨练和提升。",
+          "reversed_cn": "逆位时财富与成就可能遇到阻碍。"
+        },
+        "destiny": {
+          "upright_cn": "正缘欣赏你的认真和专注。",
+          "reversed_cn": "逆位时踏实长久的缘分可能暂时受阻。"
+        },
+        "family": {
+          "upright_cn": "用心维护家庭的每一个细节。",
+          "reversed_cn": "逆位时家庭安定需要更多关注。"
+        },
+        "general": {
+          "upright_cn": "专注和匠心精神带来成就。",
+          "reversed_cn": "逆位时物质与现实方面需要注意。"
+        }
+      }
+    },
+    {
+      "card_id": 72,
+      "name_en": "Nine of Pentacles",
+      "name_cn": "星币九",
+      "arcana": "Minor",
+      "suit": "Pentacles",
+      "number": 9,
+      "element": "Earth",
+      "keywords": {
+        "upright": [
+          "abundance",
+          "luxury",
+          "gratitude"
+        ],
+        "upright_cn": [
+          "丰盛",
+          "奢华",
+          "感恩"
+        ],
+        "reversed": [
+          "greed",
+          "dissatisfaction"
+        ],
+        "reversed_cn": [
+          "贪婪",
+          "不满足"
+        ]
+      },
+      "meanings": {
+        "upright_cn": "丰盛和满足，享受劳动的成果。",
+        "reversed_cn": "可能过于贪心或不满足现状。"
+      },
+      "topic_meanings": {
+        "love": {
+          "upright_cn": "感情生活富足美满，享受二人世界的美好。",
+          "reversed_cn": "逆位时需要反思稳定与承诺中的不足。"
+        },
+        "career": {
+          "upright_cn": "事业成功带来丰厚的物质回报。",
+          "reversed_cn": "逆位时财富与成就可能遇到阻碍。"
+        },
+        "destiny": {
+          "upright_cn": "正缘带来丰富而安稳的生活。",
+          "reversed_cn": "逆位时踏实长久的缘分可能暂时受阻。"
+        },
+        "family": {
+          "upright_cn": "家庭生活优渥美满。",
+          "reversed_cn": "逆位时家庭安定需要更多关注。"
+        },
+        "general": {
+          "upright_cn": "丰盈富足，享受劳动成果。",
+          "reversed_cn": "逆位时物质与现实方面需要注意。"
+        }
+      }
+    },
+    {
+      "card_id": 73,
+      "name_en": "Ten of Pentacles",
+      "name_cn": "星币十",
+      "arcana": "Minor",
+      "suit": "Pentacles",
+      "number": 10,
+      "element": "Earth",
+      "keywords": {
+        "upright": [
+          "completion",
+          "burden",
+          "responsibility"
+        ],
+        "upright_cn": [
+          "完成",
+          "重担",
+          "责任"
+        ],
+        "reversed": [
+          "release",
+          "delegation"
+        ],
+        "reversed_cn": [
+          "释放",
+          "分摊"
+        ]
+      },
+      "meanings": {
+        "upright_cn": "一个周期的完成，但也带来了沉重的责任。",
+        "reversed_cn": "开始释放重担，学会分摊责任。"
+      },
+      "topic_meanings": {
+        "love": {
+          "upright_cn": "感情升华为家庭的传承和长久的承诺。",
+          "reversed_cn": "逆位时需要反思稳定与承诺中的不足。"
+        },
+        "career": {
+          "upright_cn": "事业传承和家族企业的稳固。",
+          "reversed_cn": "逆位时财富与成就可能遇到阻碍。"
+        },
+        "destiny": {
+          "upright_cn": "正缘是一段经得起时间考验的缘分。",
+          "reversed_cn": "逆位时踏实长久的缘分可能暂时受阻。"
+        },
+        "family": {
+          "upright_cn": "几代同堂，家庭兴旺。",
+          "reversed_cn": "逆位时家庭安定需要更多关注。"
+        },
+        "general": {
+          "upright_cn": "长久的积累带来稳固的根基。",
+          "reversed_cn": "逆位时物质与现实方面需要注意。"
+        }
+      }
+    },
+    {
+      "card_id": 74,
+      "name_en": "Page of Pentacles",
+      "name_cn": "星币侍从",
+      "arcana": "Minor",
+      "suit": "Pentacles",
+      "number": 11,
+      "element": "Earth",
+      "keywords": {
+        "upright": [
+          "curiosity",
+          "exploration",
+          "learning"
+        ],
+        "upright_cn": [
+          "好奇",
+          "探索",
+          "学习"
+        ],
+        "reversed": [
+          "lack of focus",
+          "immaturity"
+        ],
+        "reversed_cn": [
+          "缺乏专注",
+          "不成熟"
+        ]
+      },
+      "meanings": {
+        "upright_cn": "充满好奇心和探索精神，新的学习旅程。",
+        "reversed_cn": "注意力不集中或行为不够成熟。"
+      },
+      "topic_meanings": {
+        "love": {
+          "upright_cn": "以务实的态度学习和探索感情。",
+          "reversed_cn": "逆位时需要反思稳定与承诺中的不足。"
+        },
+        "career": {
+          "upright_cn": "新的学习机会或工作技能的提升。",
+          "reversed_cn": "逆位时财富与成就可能遇到阻碍。"
+        },
+        "destiny": {
+          "upright_cn": "用脚踏实地的态度迎接正缘。",
+          "reversed_cn": "逆位时踏实长久的缘分可能暂时受阻。"
+        },
+        "family": {
+          "upright_cn": "家庭中的新机会值得期待。",
+          "reversed_cn": "逆位时家庭安定需要更多关注。"
+        },
+        "general": {
+          "upright_cn": "脚踏实地，认真学习。",
+          "reversed_cn": "逆位时物质与现实方面需要注意。"
+        }
+      }
+    },
+    {
+      "card_id": 75,
+      "name_en": "Knight of Pentacles",
+      "name_cn": "星币骑士",
+      "arcana": "Minor",
+      "suit": "Pentacles",
+      "number": 12,
+      "element": "Earth",
+      "keywords": {
+        "upright": [
+          "action",
+          "drive",
+          "ambition"
+        ],
+        "upright_cn": [
+          "行动",
+          "驱动力",
+          "抱负"
+        ],
+        "reversed": [
+          "recklessness",
+          "restlessness"
+        ],
+        "reversed_cn": [
+          "鲁莽",
+          "不安分"
+        ]
+      },
+      "meanings": {
+        "upright_cn": "充满行动力和抱负，勇往直前。",
+        "reversed_cn": "可能过于鲁莽或急躁。"
+      },
+      "topic_meanings": {
+        "love": {
+          "upright_cn": "为感情的未来努力奋斗。",
+          "reversed_cn": "逆位时需要反思稳定与承诺中的不足。"
+        },
+        "career": {
+          "upright_cn": "事业上的勤奋和坚持终获回报。",
+          "reversed_cn": "逆位时财富与成就可能遇到阻碍。"
+        },
+        "destiny": {
+          "upright_cn": "正缘需要你用行动去争取。",
+          "reversed_cn": "逆位时踏实长久的缘分可能暂时受阻。"
+        },
+        "family": {
+          "upright_cn": "为家庭的未来努力付出。",
+          "reversed_cn": "逆位时家庭安定需要更多关注。"
+        },
+        "general": {
+          "upright_cn": "踏实努力，稳中求进。",
+          "reversed_cn": "逆位时物质与现实方面需要注意。"
+        }
+      }
+    },
+    {
+      "card_id": 76,
+      "name_en": "Queen of Pentacles",
+      "name_cn": "星币王后",
+      "arcana": "Minor",
+      "suit": "Pentacles",
+      "number": 13,
+      "element": "Earth",
+      "keywords": {
+        "upright": [
+          "nurturing",
+          "compassion",
+          "practicality"
+        ],
+        "upright_cn": [
+          "滋养",
+          "同情",
+          "务实"
+        ],
+        "reversed": [
+          "insecurity",
+          "neediness"
+        ],
+        "reversed_cn": [
+          "不安全感",
+          "依赖"
+        ]
+      },
+      "meanings": {
+        "upright_cn": "温暖而务实的力量，滋养周围的人。",
+        "reversed_cn": "可能过于依赖他人或缺乏安全感。"
+      },
+      "topic_meanings": {
+        "love": {
+          "upright_cn": "温暖务实的伴侣，给予物质和情感的双重关爱。",
+          "reversed_cn": "逆位时需要反思稳定与承诺中的不足。"
+        },
+        "career": {
+          "upright_cn": "事业中展现务实和养育的品质。",
+          "reversed_cn": "逆位时财富与成就可能遇到阻碍。"
+        },
+        "destiny": {
+          "upright_cn": "正缘是一位踏实温暖的人。",
+          "reversed_cn": "逆位时踏实长久的缘分可能暂时受阻。"
+        },
+        "family": {
+          "upright_cn": "家庭中的温馨守护者。",
+          "reversed_cn": "逆位时家庭安定需要更多关注。"
+        },
+        "general": {
+          "upright_cn": "务实温暖，滋养周围的人。",
+          "reversed_cn": "逆位时物质与现实方面需要注意。"
+        }
+      }
+    },
+    {
+      "card_id": 77,
+      "name_en": "King of Pentacles",
+      "name_cn": "星币国王",
+      "arcana": "Minor",
+      "suit": "Pentacles",
+      "number": 14,
+      "element": "Earth",
+      "keywords": {
+        "upright": [
+          "authority",
+          "structure",
+          "discipline"
+        ],
+        "upright_cn": [
+          "权威",
+          "结构",
+          "纪律"
+        ],
+        "reversed": [
+          "tyranny",
+          "rigidity"
+        ],
+        "reversed_cn": [
+          "专制",
+          "固执"
+        ]
+      },
+      "meanings": {
+        "upright_cn": "成熟的权威和领导力，建立稳固的结构。",
+        "reversed_cn": "可能过于专制或固执己见。"
+      },
+      "topic_meanings": {
+        "love": {
+          "upright_cn": "感情中稳重可靠，给予安全感。",
+          "reversed_cn": "逆位时需要反思稳定与承诺中的不足。"
+        },
+        "career": {
+          "upright_cn": "事业成功，财务稳固，领导有力。",
+          "reversed_cn": "逆位时财富与成就可能遇到阻碍。"
+        },
+        "destiny": {
+          "upright_cn": "正缘是一位可靠而有成就的人。",
+          "reversed_cn": "逆位时踏实长久的缘分可能暂时受阻。"
+        },
+        "family": {
+          "upright_cn": "家庭中的经济支柱。",
+          "reversed_cn": "逆位时家庭安定需要更多关注。"
+        },
+        "general": {
+          "upright_cn": "稳固成功，物质充盈。",
+          "reversed_cn": "逆位时物质与现实方面需要注意。"
+        }
+      }
+    }
+  ]
+}

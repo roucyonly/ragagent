@@ -1,0 +1,26 @@
+# Playwright CLI logs and screenshots
+.playwright-cli/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+*.db
+
+# Node
+node_modules/
+dist/
+
+# Environment
+.env
+*.auth.json
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db

@@ -1,0 +1,503 @@
+{
+  "cookies": [
+    {
+      "name": "JSESSIONID",
+      "value": "3CE9A090F75B4E11BD403516B9390E7F",
+      "domain": "mail.163.com",
+      "path": "/contact163",
+      "expires": -1,
+      "httpOnly": true,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "JSESSIONID",
+      "value": "D708C14CD6BBEA8C67E9E5456343FEE7",
+      "domain": "mail.163.com",
+      "path": "/smflow",
+      "expires": -1,
+      "httpOnly": true,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "ui",
+      "value": "F887E2B8-E977-4DE6-9AC8-69E005BD6AB3",
+      "domain": ".graph.qq.com",
+      "path": "/",
+      "expires": 1808662745.553645,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "pt_guid_sig",
+      "value": "f986d00e8bbd9053be742f8f67c297d2568cfb6ee3f9a63df9216a647138b865",
+      "domain": ".ptlogin2.qq.com",
+      "path": "/",
+      "expires": 1780496345.628041,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "__aegis_uid",
+      "value": "8f0a7f0000014f18-04cf7d21cb1bc1d8-5789",
+      "domain": ".xui.ptlogin2.qq.com",
+      "path": "/",
+      "expires": 1778077145,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "qm_device_id",
+      "value": "fqQtmkCd5si8BIad/EjgF3KppQsbuxZIDB01sVqGYtSKODRp8MACQXHtsfeO9BjV",
+      "domain": ".mail.qq.com",
+      "path": "/",
+      "expires": 1780496345,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "starttime",
+      "value": "",
+      "domain": ".mail.163.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "utid",
+      "value": "jMpNGhRF7FmrSgOqfT1734AAGN3Vih2y",
+      "domain": "dl.reg.163.com",
+      "path": "/",
+      "expires": 1812464356.676972,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "NTES_WEB_FP",
+      "value": "51ad38db04484d3b803e871085c2f622",
+      "domain": "dl.reg.163.com",
+      "path": "/",
+      "expires": 1780496356,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "l_s_mail163CvViHzl",
+      "value": "2BDA1093FDDA9283AD02B57FFFEC7E0E378424D582286FD45124E04C194D0516F99BFF42CC4EE358FCF1099B50920C4C7BD91CDF0C7B4C23A9B7EAD01B20EAE0E7C82F44B818AECE2F9FD20686E76E04095DC131229056A5369CCB330FE8592801BEAE22DA2043BF4F9DCAC66F1A1A8C",
+      "domain": "dl.reg.163.com",
+      "path": "/",
+      "expires": 1780453156.743935,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "stats_session_id",
+      "value": "d9aac0db-7b06-498a-aacb-148a34467aa5",
+      "domain": "mail.163.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "NTES_P_UTID",
+      "value": "jMpNGhRF7FmrSgOqfT1734AAGN3Vih2y|1777904374",
+      "domain": ".163.com",
+      "path": "/",
+      "expires": 1809397174.763881,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "NTES_SESS",
+      "value": "ajn.bbkquj94vfIdoGyUNzauYUtxrrQunukpgsrMEHEJ490e4zw3CZpKQbxj_SIidjYjV1Cu0SogipMUcJAws1UpAThE3dhoxL_QZus3r1ac_TYdbRojEjyJ1i1qyYT0u2w6xq4NVgQgdjSabNPllveRObgS_vCZ0q740g8xx.7DOmj8sydlqVONdsG_LYzlCowk_pPXbNkddMHbyQs7mN78g",
+      "domain": ".163.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": true,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "NTES_PASSPORT",
+      "value": "UFK8D8SZ7YoX1xQgvX1duDZAwEwf_Vybdv2X5jU.iLhHkrW0kCD17oVmiGluxIL5OXp2fbjTq_qyMjjBDmZNovm17upwUJfpky00HCbzyFQHDKQTEpQZBv6js3dUJEJN9uNbW8NVI5AWp5etlcr6ICCbkGPjpKCmu0ITTfAdGdzWGMyvm9Q.xzclcCElWXURg",
+      "domain": ".163.com",
+      "path": "/",
+      "expires": 1780453174.763999,
+      "httpOnly": true,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "S_INFO",
+      "value": "1777904374|0|3&80##|roucyonly",
+      "domain": ".163.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "P_INFO",
+      "value": "roucyonly@163.com|1777904374|1|mail163|00&99|bej&1777793623&mail163#bej&null#10#0#0|176993&0|mail163|roucyonly@163.com",
+      "domain": ".163.com",
+      "path": "/",
+      "expires": 1809397174.764085,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "THE_LAST_LOGIN",
+      "value": "roucyonly@163.com",
+      "domain": "dl.reg.163.com",
+      "path": "/",
+      "expires": 1780496374,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "nts_mail_user",
+      "value": "roucyonly@163.com:-1:1",
+      "domain": ".163.com",
+      "path": "/",
+      "expires": 1812464374.770131,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "df",
+      "value": "mail163_letter",
+      "domain": ".mail.163.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "mail_idc",
+      "value": "\"\"",
+      "domain": ".mail.163.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "Coremail",
+      "value": "fd7192698f8eb%FLtCDzmVfTdDPvUnIkhYRUnreDqmDgxS%wmsvr-40-104.mail.163.com",
+      "domain": ".mail.163.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "MAIL_ENTRY_INFO",
+      "value": "1|0|mail163|mail163_letter|125.33.203.27|4b488eedb51a3c0cd15705b47a49f049_v1||2450099838944038|1777904374|0|0",
+      "domain": ".mail.163.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "MAIL_ENTRY_CS",
+      "value": "95d55afce8d5c7a37e969b5a1e8c79d3",
+      "domain": ".mail.163.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "MAIL_SDID",
+      "value": "2450099838944038",
+      "domain": ".mail.163.com",
+      "path": "/",
+      "expires": 1809440374.867074,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "mixmailTokens",
+      "value": "1D1ckhtLI0dc6geKhvKTPexIMYMl8OusHFFPCRGadHb02CUgAVygJVNN7ZRvHuekwBD4WIRvDemCqjgjd8apUSxwXbSXktTLE9HsX8RrF59-7Jv6RiIL7BSf4MncFPFOI2h",
+      "domain": ".mail.163.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "MAIL_MISC",
+      "value": "roucyonly",
+      "domain": ".mail.163.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "cm_last_info",
+      "value": "\"dT1yb3VjeW9ubHklNDAxNjMuY29tJmQ9aHR0cHMlM0ElMkYlMkZtYWlsLjE2My5jb20lMkZqczYlMkZtYWluLmpzcCUzRnNpZCUzREZMdENEem1WZlRkRFB2VW5Ja2hZUlVucmVEcW1EZ3hTJnM9Rkx0Q0R6bVZmVGREUHZVbklraFlSVW5yZURxbURneFMmaD1odHRwcyUzQSUyRiUyRm1haWwuMTYzLmNvbSUyRmpzNiUyRm1haW4uanNwJTNGc2lkJTNERkx0Q0R6bVZmVGREUHZVbklraFlSVW5yZURxbURneFMmdz1odHRwcyUzQSUyRiUyRm1haWwuMTYzLmNvbSZsPS0xJnQ9LTEmYXM9dHJ1ZQ==\"",
+      "domain": ".mail.163.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "MAIL_SESS",
+      "value": "ajn.bbkquj94vfIdoGyUNzauYUtxrrQunukpgsrMEHEJ490e4zw3CZpKQbxj_SIidjYjV1Cu0SogipMUcJAws1UpAThE3dhoxL_QZus3r1ac_TYdbRojEjyJ1i1qyYT0u2w6xq4NVgQgdjSabNPllveRObgS_vCZ0q740g8xx.7DOmj8sydlqVONdsG_LYzlCowk_pPXbNkddMHbyQs7mN78g",
+      "domain": ".mail.163.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "MAIL_SINFO",
+      "value": "1777904374|0|3&80##|roucyonly",
+      "domain": ".mail.163.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "MAIL_PINFO",
+      "value": "\"roucyonly@163.com|1777904374|1|mail163|00&99|bej&1777793623&mail163#bej&null#10#0#0|176993&0|mail163|roucyonly@163.com\"",
+      "domain": ".mail.163.com",
+      "path": "/",
+      "expires": 1809440374.867314,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "MAIL_PASSPORT_INFO",
+      "value": "roucyonly@163.com|1777904374|1",
+      "domain": ".mail.163.com",
+      "path": "/",
+      "expires": 1780496374.867349,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "MAIL_PASSPORT",
+      "value": "uytegeq5lKsUZIdJmUZkGg51owoHS9j0kmEU2buRO.PD3iTX3xgZls94OWLGIa.2AUMEH0bhnSnjvbb7g45Ysm4ZlGMouNHM3jXXDx0_jydDgtdhwMd57mcbfrkuNwNYQGY0TeY9a21TM2FpL8icaxx03WzbMtx4GXahhH1kWk_TWvjm4QdRI_8L8xwLTUu6J",
+      "domain": ".mail.163.com",
+      "path": "/",
+      "expires": 1780496374.86738,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "secu_info",
+      "value": "1",
+      "domain": ".mail.163.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "JSESSIONID",
+      "value": "82DCF202DD4E912E92277682519C0A1B",
+      "domain": "mail.163.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": true,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "locale",
+      "value": "",
+      "domain": "mail.163.com",
+      "path": "/",
+      "expires": 1812464375.059558,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "face",
+      "value": "js6",
+      "domain": "mail.163.com",
+      "path": "/",
+      "expires": 1812464375.059606,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "Coremail.sid",
+      "value": "FLtCDzmVfTdDPvUnIkhYRUnreDqmDgxS",
+      "domain": "mail.163.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "mail_style",
+      "value": "js6",
+      "domain": ".mail.163.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "mail_uid",
+      "value": "roucyonly@163.com",
+      "domain": ".mail.163.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "mail_host",
+      "value": "mail.163.com",
+      "domain": ".mail.163.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "p_user",
+      "value": "roucyonly",
+      "domain": "mail.163.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "p_user.sig",
+      "value": "mtEdXRElOWYq6qsoSPXDfy6ZYfk",
+      "domain": "mail.163.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "mailteam_info",
+      "value": "{\"isOwner\":0}",
+      "domain": "mail.163.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": true,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "mailteam_info.sig",
+      "value": "bOvgSFNB4qCEtQtSQ067MBvZL6c",
+      "domain": "mail.163.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": true,
+      "secure": false,
+      "sameSite": "Lax"
+    }
+  ],
+  "origins": [
+    {
+      "origin": "https://mail.163.com",
+      "localStorage": [
+        {
+          "name": "mail_login_way",
+          "value": "normal"
+        },
+        {
+          "name": "free_webmail_9c89159b6fde1dc2/cly_pathTrace",
+          "value": "free_webmail_9c89159b6fde1dc2|welcome_welcomemodule_new_mailrecom_show,free_webmail_9c89159b6fde1dc2|welcome_welcomemodule_new_ai_panel_show_in_window_show,free_webmail_9c89159b6fde1dc2|welcome_welcomemodule_new_ai_panel_main_show"
+        },
+        {
+          "name": "jmail_store_enable_aiAssistant_langMailOpt",
+          "value": "1"
+        },
+        {
+          "name": "163-qrcode-login-times",
+          "value": "0"
+        },
+        {
+          "name": "free_webmail_9c89159b6fde1dc2/cly_queue",
+          "value": "[]"
+        },
+        {
+          "name": "free_webmail_9c89159b6fde1dc2/cly_sdid",
+          "value": "2450099838944038"
+        },
+        {
+          "name": "urswebzjdeviceid",
+          "value": "1777904355800-835953"
+        },
+        {
+          "name": "163-account-login-times",
+          "value": "1"
+        },
+        {
+          "name": "free_webmail_9c89159b6fde1dc2/cly_event",
+          "value": "[]"
+        },
+        {
+          "name": "_BJS_marketingPositionClose_roucyonly@163.com",
+          "value": "{\"value\":\"{}\",\"path\":\"/\",\"expires\":-1}"
+        },
+        {
+          "name": "testLocal",
+          "value": "true"
+        },
+        {
+          "name": "free_webmail_9c89159b6fde1dc2/cly_account",
+          "value": "roucyonly@163.com"
+        },
+        {
+          "name": "cly_id",
+          "value": "4b488eedb51a3c0cd15705b47a49f049_v1"
+        }
+      ]
+    }
+  ]
+}

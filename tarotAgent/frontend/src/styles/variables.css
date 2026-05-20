@@ -1,0 +1,20 @@
+:root {
+  --color-bg: #0d0221;
+  --color-bg-card: #1a0a3e;
+  --color-primary: #7c3aed;
+  --color-primary-light: #a78bfa;
+  --color-accent: #f6d365;
+  --color-accent-pink: #fda085;
+  --color-text: #f0e6ff;
+  --color-text-muted: #9b7fbf;
+  --color-border: #4a2d82;
+  --color-success: #34d399;
+  --color-danger: #f87171;
+  --radius: 12px;
+  --radius-sm: 8px;
+  --font-size-sm: 12px;
+  --font-size-base: 14px;
+  --font-size-lg: 18px;
+  --font-size-xl: 22px;
+  --font-size-2xl: 28px;
+}
