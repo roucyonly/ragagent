@@ -2,23 +2,23 @@ from datetime import datetime
 from pydantic import BaseModel
 
 
+class ReadingCreate(BaseModel):
+    question_text: str
+    mock: bool = False
+
+
 class CardDrawn(BaseModel):
     card_id: int
     name_en: str
     name_cn: str
-    position: str  # "past" / "present" / "future"
+    position: str
     is_reversed: bool = False
-
-
-class ReadingCreate(BaseModel):
-    topic: str
-    question_text: str | None = None
-    cards: list[CardDrawn]
 
 
 class BriefReadingOut(BaseModel):
     id: str
-    topic: str
+    topic: str = ""
+    question_text: str | None = None
     cards_drawn: list[dict]
     brief_reading: str
     status: str
@@ -29,7 +29,7 @@ class BriefReadingOut(BaseModel):
 
 class DetailedReadingOut(BaseModel):
     id: str
-    topic: str
+    topic: str = ""
     question_text: str | None = None
     cards_drawn: list[dict]
     brief_reading: str
@@ -44,8 +44,11 @@ class DetailedReadingOut(BaseModel):
 
 class ReadingListItem(BaseModel):
     id: str
+    question_text: str | None = None
     topic: str
     card_count: int
+    cards_drawn: list[dict]
+    brief_reading: str | None = None
     status: str
     created_at: datetime
 

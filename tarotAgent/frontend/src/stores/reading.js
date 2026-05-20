@@ -2,38 +2,31 @@ import { defineStore } from 'pinia'
 import { ref } from 'vue'
 
 export const useReadingStore = defineStore('reading', () => {
-  const topic = ref('')
-  const questionText = ref('')
-  const selectedCards = ref([])
+  const question = ref('')
   const currentReadingId = ref('')
   const briefReading = ref('')
   const detailedReading = ref('')
+  const cardsDrawn = ref([])
   const status = ref('')
-
-  function setTopic(t) {
-    topic.value = t
-    questionText.value = ''
-  }
-
-  function setCards(cards) {
-    selectedCards.value = cards
-  }
-
-  function setReading(data) {
-    currentReadingId.value = data.id
-    briefReading.value = data.brief_reading || ''
-    status.value = data.status
-  }
+  const readingPromise = ref(null)
+  const readingResolved = ref(false)
+  const readingError = ref(false)
 
   function reset() {
-    topic.value = ''
-    questionText.value = ''
-    selectedCards.value = []
+    question.value = ''
     currentReadingId.value = ''
     briefReading.value = ''
     detailedReading.value = ''
+    cardsDrawn.value = []
     status.value = ''
+    readingPromise.value = null
+    readingResolved.value = false
+    readingError.value = false
   }
 
-  return { topic, questionText, selectedCards, currentReadingId, briefReading, detailedReading, status, setTopic, setCards, setReading, reset }
+  return {
+    question, currentReadingId, briefReading, detailedReading,
+    cardsDrawn, status, readingPromise, readingResolved, readingError,
+    reset,
+  }
 })

@@ -1,5 +1,8 @@
 <template>
   <div class="page-container">
+    <div class="top-bar">
+      <button class="back-btn" @click="router.push('/profile')">&#8592; 返回</button>
+    </div>
     <h1 class="page-title">完整解读</h1>
     <p class="page-subtitle">你的塔罗占卜详细报告</p>
 
@@ -78,5 +81,7 @@ async function handleShare() {
   margin: 20px 0 12px; padding-bottom: 8px; border-bottom: 1px solid var(--color-border);
 }
 :deep(.section-heading:first-child) { margin-top: 0; }
+.top-bar { margin-bottom: 12px; }
+.back-btn { background: none; border: none; color: var(--color-text-muted); font-size: var(--font-size-sm); }
 .actions { display: flex; gap: 12px; }
 </style>

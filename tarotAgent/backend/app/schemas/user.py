@@ -2,10 +2,14 @@ from datetime import date
 from pydantic import BaseModel
 
 
-class UserCreate(BaseModel):
-    name: str
-    gender: str | None = None
-    birth_date: date | None = None
+class RegisterIn(BaseModel):
+    nickname: str
+    password: str
+
+
+class LoginIn(BaseModel):
+    nickname: str
+    password: str
 
 
 class UserUpdate(BaseModel):
@@ -16,7 +20,6 @@ class UserUpdate(BaseModel):
 
 class UserOut(BaseModel):
     id: str
-    openid: str | None = None
     nickname: str | None = None
     name: str | None = None
     gender: str | None = None
