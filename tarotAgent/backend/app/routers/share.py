@@ -29,6 +29,10 @@ async def gen_image(
     if reading.status != "completed":
         raise HTTPException(status_code=400, detail="Detailed reading not generated yet")
 
+    # Skip if already generated
+    if reading.share_image_url:
+        return {"image_url": reading.share_image_url}
+
     reading_data = {
         "topic_name": TOPICS.get(reading.topic, reading.topic),
         "cards_drawn": reading.cards_drawn,

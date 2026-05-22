@@ -23,3 +23,19 @@ class OpenAIProvider(LLMProvider):
             temperature=temperature,
         )
         return response.choices[0].message.content
+
+    async def stream_generate(self, system_prompt: str, user_prompt: str, max_tokens: int = 1000, temperature: float = 0.7):
+        stream = await self.client.chat.completions.create(
+            model=self.model,
+            messages=[
+                {"role": "system", "content": system_prompt},
+                {"role": "user", "content": user_prompt},
+            ],
+            max_tokens=max_tokens,
+            temperature=temperature,
+            stream=True,
+        )
+        async for chunk in stream:
+            content = chunk.choices[0].delta.content
+            if content:
+                yield content

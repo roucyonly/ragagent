@@ -22,14 +22,16 @@
 
     <div v-else class="history-list fade-in">
       <div v-for="r in readings" :key="r.id" class="history-item" @click="goToReading(r)">
-        <div class="history-cards">
-          <span v-for="card in (r.cards_drawn || [])" :key="card.card_id" class="mini-card">{{ card.name_cn }}</span>
+        <div class="history-left">
+          <div class="history-question">{{ r.question_text || '综合占卜' }}</div>
+          <div class="history-cards">
+            <span v-for="card in (r.cards_drawn || [])" :key="card.card_id" class="mini-card">{{ card.name_cn }}</span>
+          </div>
         </div>
-        <div class="history-meta">
-          <span class="history-question">{{ r.question_text || '综合占卜' }}</span>
+        <div class="history-right">
+          <span class="history-status" :class="r.status">{{ statusLabel(r.status) }}</span>
           <span class="history-date">{{ formatDate(r.created_at) }}</span>
         </div>
-        <span class="history-status" :class="r.status">{{ statusLabel(r.status) }}</span>
       </div>
     </div>
   </div>
@@ -97,20 +99,22 @@ function handleLogout() {
 .empty-state { text-align: center; padding: 40px 0; color: var(--color-text-muted); }
 .history-list { display: flex; flex-direction: column; gap: 10px; }
 .history-item {
-  display: flex; align-items: center; gap: 10px; padding: 12px;
+  display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; padding: 14px 16px;
   background: var(--color-bg-card); border: 1px solid var(--color-border);
   border-radius: var(--radius-sm); cursor: pointer; transition: all 0.2s;
 }
 .history-item:hover { border-color: var(--color-primary-light); }
-.history-cards { display: flex; gap: 4px; }
+.history-left { display: flex; flex-direction: column; gap: 8px; flex: 1; min-width: 0; }
+.history-question { font-size: var(--font-size-sm); color: var(--color-text); line-height: 1.5; }
+.history-cards { display: flex; gap: 6px; flex-wrap: wrap; }
 .mini-card {
-  font-size: 10px; padding: 2px 6px; background: rgba(246,211,101,0.1);
+  font-size: 10px; padding: 2px 8px; background: rgba(246,211,101,0.1);
   border-radius: 4px; color: var(--color-accent);
 }
-.history-meta { flex: 1; display: flex; flex-direction: column; gap: 2px; }
-.history-question { font-size: var(--font-size-sm); color: var(--color-text); }
-.history-date { font-size: 11px; color: var(--color-text-muted); }
+.history-right { display: flex; flex-direction: column; align-items: flex-end; gap: 4px; flex-shrink: 0; }
 .history-status { font-size: 11px; color: var(--color-text-muted); }
 .history-status.completed { color: var(--color-success); }
 .history-status.paid { color: var(--color-accent); }
+.history-status.brief { color: #fb923c; }
+.history-date { font-size: 11px; color: var(--color-text-muted); }
 </style>

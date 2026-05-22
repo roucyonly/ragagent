@@ -8,6 +8,11 @@ class LLMProvider(ABC):
     async def generate(self, system_prompt: str, user_prompt: str, max_tokens: int = 1000, temperature: float = 0.7) -> str:
         ...
 
+    async def stream_generate(self, system_prompt: str, user_prompt: str, max_tokens: int = 1000, temperature: float = 0.7):
+        """Override in subclass to yield streaming chunks. Default falls back to non-streaming."""
+        result = await self.generate(system_prompt, user_prompt, max_tokens, temperature)
+        yield result
+
 
 def get_provider() -> LLMProvider:
     provider_name = settings.LLM_PROVIDER.lower()

@@ -21,6 +21,8 @@ class Reading(Base):
     brief_reading: Mapped[str | None] = mapped_column(Text)
     detailed_reading: Mapped[str | None] = mapped_column(Text)
     share_image_url: Mapped[str | None] = mapped_column(String(512))
+    follow_up_count: Mapped[int] = mapped_column(Integer, default=0)
+    conversation_history: Mapped[dict | None] = mapped_column(JSON, nullable=True)
     status: Mapped[str] = mapped_column(String(16), default="brief")
     llm_provider: Mapped[str] = mapped_column(String(32), default="deepseek")
     llm_model: Mapped[str | None] = mapped_column(String(64))

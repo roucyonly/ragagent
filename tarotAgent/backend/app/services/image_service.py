@@ -91,10 +91,12 @@ async def generate_share_image(reading_id: str, reading_data: dict, user_data: d
 
     await asyncio.to_thread(_render_image, html_content, output_path)
 
-    # Upload to OSS if configured
-    if settings.OSS_ACCESS_KEY_ID and settings.OSS_BUCKET_NAME:
-        object_key = f"tarot/{reading_id}.jpg"
-        image_url = await asyncio.to_thread(_upload_to_oss, output_path, object_key)
-        return image_url
-
-    return f"/static/generated/{reading_id}.jpg"
+    # Always upload to OSS
+    object_key = f"tarot/{reading_id}.jpg"
+    image_url = await asyncio.to_thread(_upload_to_oss, output_path, object_key)
+    # Clean up local temp file
+    try:
+        os.remove(output_path)
+    except OSError:
+        pass
+    return image_url

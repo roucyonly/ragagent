@@ -37,9 +37,14 @@ class DetailedReadingOut(BaseModel):
     share_image_url: str | None = None
     status: str
     llm_provider: str
+    follow_up_count: int = 0
     created_at: datetime
 
     model_config = {"from_attributes": True}
+
+
+class FollowUpIn(BaseModel):
+    question: str
 
 
 class ReadingListItem(BaseModel):

@@ -9,6 +9,7 @@ from app.llm.base import get_provider
 from app.models.reading import Reading
 from app.prompts.brief_reading import build_brief_prompt
 from app.prompts.detailed_reading import build_detailed_prompt
+from app.prompts.follow_up import build_follow_up_prompt
 
 TOPICS = {
     "love": "桃花/爱情",
@@ -133,6 +134,78 @@ async def generate_detailed_reading(db: AsyncSession, reading: Reading, user) ->
 
     reading.detailed_reading = result
     reading.status = "completed"
+    db.add(reading)
+    await db.commit()
+    return result
+
+
+async def stream_detailed_reading(db: AsyncSession, reading: Reading, user):
+    topic_name = TOPICS.get(reading.topic, reading.topic)
+    cards_text = format_cards_text(reading.cards_drawn)
+    cards_meanings = format_cards_meanings(reading.cards_drawn, reading.topic)
+    user_info = build_user_info(user)
+
+    system_prompt, user_prompt = build_detailed_prompt(
+        topic_name=topic_name,
+        question=reading.question_text,
+        cards_text=cards_text,
+        cards_meanings=cards_meanings,
+        user_info=user_info,
+    )
+
+    provider = get_provider()
+    full_text = ""
+
+    async for chunk in provider.stream_generate(
+        system_prompt=system_prompt,
+        user_prompt=user_prompt,
+        max_tokens=2000,
+        temperature=0.7,
+    ):
+        full_text += chunk
+        yield chunk
+
+    reading.detailed_reading = full_text
+    reading.status = "completed"
+    db.add(reading)
+    await db.commit()
+
+
+async def generate_follow_up(db: AsyncSession, reading: Reading, user, question: str):
+    if reading.follow_up_count >= 3:
+        raise ValueError("最多只能追问3次")
+
+    topic_name = TOPICS.get(reading.topic, reading.topic)
+    cards_text = format_cards_text(reading.cards_drawn)
+    cards_meanings = format_cards_meanings(reading.cards_drawn, reading.topic)
+    user_info = build_user_info(user)
+
+    history = reading.conversation_history or []
+
+    system_prompt, user_prompt = build_follow_up_prompt(
+        topic_name=topic_name,
+        question=reading.question_text,
+        cards_text=cards_text,
+        cards_meanings=cards_meanings,
+        user_info=user_info,
+        history=history,
+        follow_up_question=question,
+    )
+
+    provider = get_provider()
+    result = await provider.generate(
+        system_prompt=system_prompt,
+        user_prompt=user_prompt,
+        max_tokens=1000,
+        temperature=0.7,
+    )
+
+    history.append({"role": "user", "content": question})
+    history.append({"role": "assistant", "content": result})
+
+    reading.follow_up_count += 1
+    reading.conversation_history = history
+    reading.detailed_reading = (reading.detailed_reading or "") + f"\n\n【追问 {reading.follow_up_count}】\n{question}\n\n答案：{result}"
     db.add(reading)
     await db.commit()
     return result
