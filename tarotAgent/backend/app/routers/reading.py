@@ -43,7 +43,8 @@ async def create_reading(
     data: ReadingCreate,
     user: User = Depends(get_current_user),
     db: AsyncSession = Depends(get_db),
-) -> BriefReadingOut:
+):
+    """Create a draft reading, generate 3 random cards + brief reading in background."""
     cards_data = _pick_random_cards()
 
     reading = Reading(
@@ -52,29 +53,31 @@ async def create_reading(
         question_text=data.question_text,
         cards_drawn=cards_data,
         card_count=3,
-        status="brief",
+        status="draft",
     )
     db.add(reading)
     await db.commit()
+    # Refresh to get id
     await db.refresh(reading)
 
+    # Generate brief reading asynchronously (fire and forget for mock, wait for real)
     if data.mock:
         reading.brief_reading = (
             "三张牌的画面在我眼前徐徐展开。过去的能量显示你曾经历过一段犹豫不决的时期，"
             "那时你总是试图在理智和感性之间寻找平衡。而现在，一股全新的力量正在涌入你的生活，"
             "它带着改变的气息，暗示你正站在一个重要的十字路口。"
-            "未来的牌面透露出希望的光芒，如果你能勇敢地跟随内心的指引，"
+            "未来牌面透露出希望的光芒，如果你能勇敢地跟随内心的指引，"
             "一段意想不到的美好旅程正在前方等待着你。命运的丝线已经悄然编织，只等你去揭开它神秘的面纱……"
         )
+        reading.status = "brief"
         reading.llm_provider = "mock"
         db.add(reading)
         await db.commit()
-        await db.refresh(reading)
     else:
         await generate_brief_reading(db, reading, user)
         await db.refresh(reading)
 
-    return BriefReadingOut.model_validate(reading)
+    return {"id": reading.id, "status": reading.status}
 
 
 @router.get("/{reading_id}")
@@ -269,3 +272,50 @@ async def follow_up(
         raise HTTPException(status_code=400, detail=str(e))
 
     return {"answer": answer, "follow_up_count": reading.follow_up_count}
+
+
+@router.post("/{reading_id}/select-cards")
+async def select_cards(
+    reading_id: str,
+    data: dict,
+    user: User = Depends(get_current_user),
+    db: AsyncSession = Depends(get_db),
+):
+    """Incrementally update selected card count. Called on each pick/remove. No brief generation."""
+    result = await db.execute(select(Reading).where(Reading.id == reading_id))
+    reading = result.scalar_one_or_none()
+
+    if not reading:
+        raise HTTPException(status_code=404, detail="Reading not found")
+    if reading.user_id != user.id:
+        raise HTTPException(status_code=403, detail="Not your reading")
+
+    count = data.get('count', 0)
+    reading.cards_selected_count = count
+    db.add(reading)
+    await db.commit()
+
+    return {"cards_selected_count": count}
+
+
+@router.post("/{reading_id}/confirm-selection")
+async def confirm_selection(
+    reading_id: str,
+    user: User = Depends(get_current_user),
+    db: AsyncSession = Depends(get_db),
+):
+    """User confirmed card selection. Update cards_drawn with full card data + set status to brief. Returns full reading."""
+    result = await db.execute(select(Reading).where(Reading.id == reading_id))
+    reading = result.scalar_one_or_none()
+
+    if not reading:
+        raise HTTPException(status_code=404, detail="Reading not found")
+    if reading.user_id != user.id:
+        raise HTTPException(status_code=403, detail="Not your reading")
+
+    reading.status = "brief"
+    db.add(reading)
+    await db.commit()
+    await db.refresh(reading)
+
+    return BriefReadingOut.model_validate(reading)

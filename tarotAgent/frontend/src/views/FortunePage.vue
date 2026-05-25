@@ -43,11 +43,11 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import { ref, onMounted } from 'vue'
 import { useRouter } from 'vue-router'
 import { useUserStore } from '../stores/user'
 import { useReadingStore } from '../stores/reading'
-import { createReading } from '../api/reading'
+import { createReading, getHistory } from '../api/reading'
 import bgImg from '../assets/taroter.jpg'
 
 const router = useRouter()
@@ -56,6 +56,27 @@ const readingStore = useReadingStore()
 
 const question = ref('')
 const submitting = ref(false)
+
+onMounted(async () => {
+  // Check for unfinished reading (draft with partial card selection)
+  try {
+    const { data } = await getHistory(20, 0)
+    const now = Date.now()
+    const unfinished = data.find(r => {
+      if (r.status !== 'draft' || r.cards_selected_count === 0) return false
+      const created = new Date(r.created_at).getTime()
+      return now - created < 10 * 60 * 1000
+    })
+    if (unfinished) {
+      readingStore.reset()
+      readingStore.question = unfinished.question_text || ''
+      readingStore.currentReadingId = unfinished.id
+      readingStore.status = unfinished.status
+      readingStore.readingResolved = true
+      router.push('/cards')
+    }
+  } catch {}
+})
 
 const suggestions = [
   '我的正缘什么时候出现？',

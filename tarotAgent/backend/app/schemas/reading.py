@@ -20,8 +20,10 @@ class BriefReadingOut(BaseModel):
     topic: str = ""
     question_text: str | None = None
     cards_drawn: list[dict]
-    brief_reading: str
-    status: str
+    card_count: int = 0
+    brief_reading: str | None = None
+    status: str = "draft"
+    cards_selected_count: int = 0
     created_at: datetime
 
     model_config = {"from_attributes": True}
@@ -55,6 +57,7 @@ class ReadingListItem(BaseModel):
     cards_drawn: list[dict]
     brief_reading: str | None = None
     status: str
+    cards_selected_count: int = 0
     created_at: datetime
 
     model_config = {"from_attributes": True}

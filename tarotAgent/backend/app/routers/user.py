@@ -41,7 +41,8 @@ async def list_readings(
     db: AsyncSession = Depends(get_db),
     limit: int = 20,
     offset: int = 0,
-) -> list[ReadingListItem]:
+):
+    """Return reading list. Draft status hides cards_drawn and brief_reading to protect unconfirmed selections."""
     result = await db.execute(
         select(Reading)
         .where(Reading.user_id == user.id)
@@ -50,4 +51,31 @@ async def list_readings(
         .offset(offset)
     )
     readings = result.scalars().all()
-    return [ReadingListItem.model_validate(r) for r in readings]
+
+    items = []
+    for r in readings:
+        if r.status == "draft":
+            items.append({
+                "id": r.id,
+                "question_text": r.question_text,
+                "topic": r.topic,
+                "card_count": r.card_count,
+                "cards_drawn": [],
+                "brief_reading": None,
+                "status": r.status,
+                "cards_selected_count": r.cards_selected_count,
+                "created_at": r.created_at,
+            })
+        else:
+            items.append({
+                "id": r.id,
+                "question_text": r.question_text,
+                "topic": r.topic,
+                "card_count": r.card_count,
+                "cards_drawn": r.cards_drawn or [],
+                "brief_reading": r.brief_reading,
+                "status": r.status,
+                "cards_selected_count": r.cards_selected_count,
+                "created_at": r.created_at,
+            })
+    return items

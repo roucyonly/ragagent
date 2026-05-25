@@ -24,12 +24,15 @@
       <div v-for="r in readings" :key="r.id" class="history-item" @click="goToReading(r)">
         <div class="history-left">
           <div class="history-question">{{ r.question_text || '综合占卜' }}</div>
-          <div class="history-cards">
+          <div class="history-cards" v-if="r.status === 'brief' || r.status === 'completed' || r.status === 'paid'">
             <span v-for="card in (r.cards_drawn || [])" :key="card.card_id" class="mini-card">{{ card.name_cn }}</span>
+          </div>
+          <div class="history-cards draft-progress" v-else-if="r.status === 'draft' && r.cards_selected_count > 0">
+            <span class="mini-badge">已选 {{ r.cards_selected_count }}/3</span>
           </div>
         </div>
         <div class="history-right">
-          <span class="history-status" :class="r.status">{{ statusLabel(r.status) }}</span>
+          <span class="history-status" :class="r.status">{{ statusLabel(r.status, r.cards_selected_count) }}</span>
           <span class="history-date">{{ formatDate(r.created_at) }}</span>
         </div>
       </div>
@@ -41,10 +44,12 @@
 import { ref, onMounted } from 'vue'
 import { useRouter } from 'vue-router'
 import { useUserStore } from '../stores/user'
+import { useReadingStore } from '../stores/reading'
 import { getHistory } from '../api/reading'
 
 const router = useRouter()
 const userStore = useUserStore()
+const readingStore = useReadingStore()
 
 const readings = ref([])
 const loading = ref(true)
@@ -63,15 +68,30 @@ function formatDate(d) {
   return new Date(d).toLocaleDateString('zh-CN')
 }
 
-function statusLabel(s) {
-  return { brief: '待解锁', paid: '已付费', completed: '已完成' }[s] || s
+function statusLabel(s, cardsSelectedCount) {
+  if (s === 'draft' && cardsSelectedCount > 0) return '选牌中'
+  return { draft: '待选牌', brief: '待解锁', paid: '已付费', completed: '已完成' }[s] || s
 }
 
 function goToReading(r) {
   if (r.status === 'completed' || r.status === 'paid') {
     router.push(`/detail/${r.id}`)
+  } else if (r.status === 'draft' && r.cards_selected_count > 0) {
+    // Resume card selection
+    readingStore.reset()
+    readingStore.question = r.question_text || ''
+    readingStore.currentReadingId = r.id
+    readingStore.status = r.status
+    readingStore.readingResolved = true
+    router.push('/cards')
   } else {
-    router.push(`/result/${r.id}`)
+    // draft with 0 selected — go to card selection (fresh start)
+    readingStore.reset()
+    readingStore.question = r.question_text || ''
+    readingStore.currentReadingId = r.id
+    readingStore.status = r.status
+    readingStore.readingResolved = true
+    router.push('/cards')
   }
 }
 
@@ -115,6 +135,15 @@ function handleLogout() {
 .history-status { font-size: 11px; color: var(--color-text-muted); }
 .history-status.completed { color: var(--color-success); }
 .history-status.paid { color: var(--color-accent); }
-.history-status.brief { color: #fb923c; }
+.history-status.brief { color: var(--color-accent); }
+.history-status.draft { color: #fb923c; }
 .history-date { font-size: 11px; color: var(--color-text-muted); }
-</style>
+.draft-progress { display: flex; gap: 6px; }
+.mini-badge {
+  font-size: 10px; padding: 2px 8px; background: rgba(251,146,60,0.15);
+  border-radius: 4px; color: #fb923c;
+}
+.mini-card {
+  font-size: 10px; padding: 2px 8px; background: rgba(246,211,101,0.1);
+  border-radius: 4px; color: var(--color-accent);
+}

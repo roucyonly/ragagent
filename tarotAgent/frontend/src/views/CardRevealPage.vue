@@ -7,7 +7,7 @@
     <template v-if="phase !== 'reveal'">
       <div class="stage">
         <!-- Slot outlines -->
-        <div v-for="n in 3" :key="'s'+n"
+        <div v-for="n in MAX_CARDS" :key="'s'+n"
           class="slot-outline"
           :class="{ filled: n <= picked.length, show: phase === 'pick' }"
           :style="getSlotOutlineStyle(n - 1)">
@@ -18,7 +18,7 @@
         <div v-for="i in CARD_COUNT" :key="i"
           class="card-anim"
           :class="{
-            pickable: phase === 'pick' && !picked.includes(i - 1) && picked.length < 3,
+            pickable: phase === 'pick' && !picked.includes(i - 1) && picked.length < MAX_CARDS,
             'unpicked-hide': phase === 'shrink' && !picked.includes(i - 1),
           }"
           :style="getCardStyle(i - 1)"
@@ -29,10 +29,10 @@
         </div>
       </div>
 
-      <p class="pick-hint" :class="{ 'hint-hide': phase === 'shrink' }">{{ picked.length < 3 ? `请选择 ${3 - picked.length} 张牌` : '已选满 3 张，确认选牌' }}</p>
+      <p class="pick-hint" :class="{ 'hint-hide': phase === 'shrink' }">{{ picked.length === 0 ? '请选择牌' : `已选 ${picked.length} 张` }}</p>
 
       <div class="confirm-area" :class="{ 'hint-hide': phase === 'shrink' }">
-        <button class="btn-primary" :disabled="picked.length < 3 || confirming" @click="confirm">
+        <button class="btn-primary" :disabled="picked.length === 0 || confirming" @click="confirm">
           {{ confirming ? '占卜中...' : '确认选牌' }}
         </button>
       </div>
@@ -78,7 +78,7 @@
 import { ref, onMounted } from 'vue'
 import { useRouter, useRoute } from 'vue-router'
 import { useReadingStore } from '../stores/reading'
-import { getReading } from '../api/reading'
+import { getReading, selectCards, generateShareImage } from '../api/reading'
 import bgImg from '../assets/taroter.jpg'
 
 const props = defineProps({ skipToReveal: Boolean })
@@ -92,6 +92,7 @@ const FAN_RADIUS = 200
 const CW = 46, CH = 72
 const SLOT_SPACING = 66
 const SLOT_Y = 92
+const MAX_CARDS = 3
 
 // Reveal target positions — must match .reveal-container CSS exactly
 // reveal-container padding-top:10px + reveal-cards margin:16px = 26px from top
@@ -190,13 +191,21 @@ function getCardStyle(i) {
 
 function pickCard(i) {
   if (phase.value !== 'pick') return
-  if (picked.value.includes(i)) return
-  if (picked.value.length >= 3) return
+  if (picked.value.includes(i)) {
+    // Deselect: remove from picked
+    picked.value = picked.value.filter(p => p !== i)
+    // Sync count to backend
+    selectCards(readingStore.currentReadingId, picked.value.length)
+    return
+  }
+  if (picked.value.length >= MAX_CARDS) return
   picked.value.push(i)
+  // Sync count to backend
+  selectCards(readingStore.currentReadingId, picked.value.length)
 }
 
 async function confirm() {
-  if (picked.value.length < 3) return
+  if (picked.value.length === 0) return
   confirming.value = true
   try {
     if (readingStore.readingPromise) await readingStore.readingPromise
@@ -206,7 +215,12 @@ async function confirm() {
       return
     }
 
-    // Phase 1: shrink — unpicked fade out, picked move up & grow
+    // Confirm selection: backend will set status=brief and return full cards+brief
+    const { data } = await confirmSelection(readingStore.currentReadingId)
+    readingStore.briefReading = data.brief_reading || ''
+    readingStore.cardsDrawn = data.cards_drawn || []
+
+    // Phase 1: shrink
     phase.value = 'shrink'
     await new Promise(r => setTimeout(r, 1200))
 
@@ -219,7 +233,8 @@ async function confirm() {
 }
 
 async function startReveal() {
-  for (let i = 0; i < 3; i++) {
+  const count = readingStore.cardsDrawn?.length || picked.value.length
+  for (let i = 0; i < count; i++) {
     await new Promise(r => setTimeout(r, 800))
     revealedIndices.value.push(i)
   }
@@ -257,17 +272,20 @@ onMounted(async () => {
       readingStore.currentReadingId = data.id
       readingStore.cardsDrawn = data.cards_drawn || []
       readingStore.briefReading = data.brief_reading || ''
+      readingStore.status = data.status
+
+      if (data.status === 'draft') {
+        // Resume card selection
+        phase.value = 'fan'
+        setTimeout(() => { phase.value = 'pick' }, 900)
+        return
+      }
     } catch {
       router.push('/profile')
       return
     }
     phase.value = 'reveal'
     await startReveal()
-    return
-  }
-
-  if (!readingStore.question && !readingStore.readingPromise) {
-    router.push('/fortune')
     return
   }
   setTimeout(() => { phase.value = 'fan' }, 200)
